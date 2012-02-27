@@ -6,6 +6,7 @@
  *  Index
  *  -----------
  *  1. General Sitewide Styles
+ *    -- Bootstrap
  *    -- Layout
  *    -- General Styles
  *    -- Typography
@@ -21,37 +22,65 @@
 
 /*         General Sitewide Styles
  *************************************************/
-  /* Layout */
-
-
-  /* General Styles (Colors, Backgrounds etc.)*/
 
 @import 'partials/bootstrap/_mixins.scss';
-@import 'partials/bootstrap/_variables.scss';
-@import 'partials/bootstrap/_component-animations.scss';
-@import 'partials/bootstrap/_tables.scss';
-@import 'partials/bootstrap/_accordion.scss';
-@import 'partials/bootstrap/_dropdowns.scss';
-@import 'partials/bootstrap/_thumbnails.scss';
-@import 'partials/bootstrap/_alerts.scss';
-@import 'partials/bootstrap/_forms.scss';
-@import 'partials/bootstrap/_pager.scss';
-@import 'partials/bootstrap/_tooltip.scss';
-@import 'partials/bootstrap/_breadcrumbs.scss';
+
+// Core variables and mixins
+@import 'partials/bootstrap/_variables.scss'; // Modify this for custom colors, font-sizes, etc
+@import 'partials/bootstrap/_mixins.scss';
+
+// CSS Reset
+@import 'partials/bootstrap/_reset.scss';
+
+// Grid system and page structure
+@import 'partials/bootstrap/_scaffolding.scss';
 @import 'partials/bootstrap/_grid.scss';
-@import 'partials/bootstrap/_pagination.scss';
+@import 'partials/bootstrap/_layouts.scss';
+
+// Base CSS
 @import 'partials/bootstrap/_type.scss';
-@import 'partials/bootstrap/_button-groups.scss';
-@import 'partials/bootstrap/_hero-unit.scss';
-@import 'partials/bootstrap/_popovers.scss';
-@import 'partials/bootstrap/_utilities.scss';
+@import 'partials/bootstrap/_code.scss';
+@import 'partials/bootstrap/_forms.scss';
+@import 'partials/bootstrap/_tables.scss';
+
+// Components: common
+@import 'partials/bootstrap/_sprites.scss';
+@import 'partials/bootstrap/_dropdowns.scss';
+@import 'partials/bootstrap/_wells.scss';
+@import 'partials/bootstrap/_component-animations.scss';
+@import 'partials/bootstrap/_close.scss';
+
+// Components: Buttons & Alerts
 @import 'partials/bootstrap/_buttons.scss';
+@import 'partials/bootstrap/_button-groups.scss';
+@import 'partials/bootstrap/_alerts.scss'; // Note: alerts share common CSS with buttons and thus have styles in buttons.scss
+
+// Components: Nav
+@import 'partials/bootstrap/_navs.scss';
+@import 'partials/bootstrap/_navbar.scss';
+@import 'partials/bootstrap/_breadcrumbs.scss';
+@import 'partials/bootstrap/_pagination.scss';
+@import 'partials/bootstrap/_pager.scss';
+
+// Components: Popovers
+@import 'partials/bootstrap/_modals.scss';
+@import 'partials/bootstrap/_tooltip.scss';
+@import 'partials/bootstrap/_popovers.scss';
+
+// Components: Misc
+@import 'partials/bootstrap/_thumbnails.scss';
 @import 'partials/bootstrap/_labels.scss';
 @import 'partials/bootstrap/_progress-bars.scss';
+@import 'partials/bootstrap/_accordion.scss';
 @import 'partials/bootstrap/_carousel.scss';
-@import 'partials/bootstrap/_layouts.scss';
-@import 'partials/bootstrap/_reset.scss';
-@import 'partials/bootstrap/_wells.scss';
+@import 'partials/bootstrap/_hero-unit.scss';
+
+// Utility classes
+@import 'partials/bootstrap/_utilities.scss'; // Has to be last to override when necessary
+
+  /* Layout */
+
+  /* General Styles (Colors, Backgrounds etc.)*/
 
   /* Typography */
 
