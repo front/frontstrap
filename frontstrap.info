@@ -2,7 +2,7 @@
 
 name = Frontstrap
 description = Frontstrap, sub-theme for Sasson
-screenshot = images/frontstrap.png
+screenshot = img/frontstrap.png
 core = 7.x
 base theme = sasson
 
