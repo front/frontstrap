@@ -2959,7 +2959,7 @@ input[type="submit"].btn.small {
 }
 
 /* line 5, partials/bootstrap/_alerts.scss */
-.alert {
+.alert, div.messages {
   padding: 8px 35px 8px 14px;
   margin-bottom: 18px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -2972,7 +2972,7 @@ input[type="submit"].btn.small {
 
 /* line 14, partials/bootstrap/_alerts.scss */
 .alert,
-.alert-heading {
+.alert-heading, div.messages {
   color: #c09853;
 }
 
@@ -2992,50 +2992,58 @@ input[type="submit"].btn.small {
 
 /* line 34, partials/bootstrap/_alerts.scss */
 .alert-success,
-.alert-success .alert-heading {
+.alert-success .alert-heading, div.status {
   color: #468847;
 }
 
 /* line 38, partials/bootstrap/_alerts.scss */
 .alert-danger,
-.alert-error {
+.alert-error, div.error {
   background-color: #f2dede;
   border-color: #eed3d7;
+  background-image: none;
 }
 
-/* line 45, partials/bootstrap/_alerts.scss */
+/* line 47, partials/bootstrap/_alerts.scss */
 .alert-danger,
 .alert-error,
 .alert-danger .alert-heading,
-.alert-error .alert-heading {
+.alert-error .alert-heading
+.div.error {
   color: #b94a48;
 }
 
-/* line 48, partials/bootstrap/_alerts.scss */
-.alert-info {
+/* line 50, partials/bootstrap/_alerts.scss */
+.alert-info, div.status {
   background-color: #d9edf7;
   border-color: #bce8f1;
+  background-image: none;
 }
 
-/* line 53, partials/bootstrap/_alerts.scss */
+/* line 56, partials/bootstrap/_alerts.scss */
 .alert-info,
-.alert-info .alert-heading {
+.alert-info .alert-heading, div.status {
   color: #3a87ad;
 }
 
 /* line 60, partials/bootstrap/_alerts.scss */
-.alert-block {
+div.warning {
+  background-image: none;
+}
+
+/* line 67, partials/bootstrap/_alerts.scss */
+.alert-block, .content-messages {
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-/* line 65, partials/bootstrap/_alerts.scss */
+/* line 72, partials/bootstrap/_alerts.scss */
 .alert-block > p,
 .alert-block > ul {
   margin-bottom: 0;
 }
 
-/* line 68, partials/bootstrap/_alerts.scss */
+/* line 75, partials/bootstrap/_alerts.scss */
 .alert-block p + p {
   margin-top: 5px;
 }
