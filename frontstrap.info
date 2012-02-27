@@ -25,7 +25,18 @@ stylesheets[all][] = styles/frontstrap.css
 
 ; Theme Script Files ------------------------------------------------------
 
-scripts[] = scripts/script.js
+scripts[] = scripts/bootstrap/bootstrap-button.js
+scripts[] = scripts/bootstrap/bootstrap-modal.js
+scripts[] = scripts/bootstrap/bootstrap-tooltip.js
+scripts[] = scripts/bootstrap/bootstrap-carousel.js
+scripts[] = scripts/bootstrap/bootstrap-popover.js
+scripts[] = scripts/bootstrap/bootstrap-transition.js
+scripts[] = scripts/bootstrap/bootstrap-collapse.js
+scripts[] = scripts/bootstrap/bootstrap-scrollspy.js
+scripts[] = scripts/bootstrap/bootstrap-typeahead.js
+scripts[] = scripts/bootstrap/bootstrap-alert.js
+scripts[] = scripts/bootstrap/bootstrap-dropdown.js
+scripts[] = scripts/bootstrap/bootstrap-tab.js
 
 
 ; Regions -----------------------------------------------------------------
