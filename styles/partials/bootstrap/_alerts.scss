@@ -43,8 +43,8 @@
 .alert-danger,
 .alert-error,
 .alert-danger .alert-heading,
-.alert-error .alert-heading
-.div.error {
+.alert-error .alert-heading,
+div.error {
   color: $errorText;
 }
 .alert-info, div.status {

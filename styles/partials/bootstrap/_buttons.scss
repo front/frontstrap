@@ -6,7 +6,7 @@
 // --------------------------------------------------
 
 // Core
-.btn {
+.btn, .form-submit {
   display: inline-block;
   padding: 4px 10px 4px;
   margin-bottom: 0; // For input.btn
@@ -23,14 +23,14 @@
   $shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   @include box-shadow($shadow);
   cursor: pointer;
-
+  margin-right: 5px;
   // Give IE7 some love
   @include reset-filter();
   @include ie7-restore-left-whitespace();
 }
 
 // Hover state
-.btn:hover {
+.btn:hover, .form-submit:hover {
   color: $grayDark;
   text-decoration: none;
   background-color: darken($white, 10%);
@@ -48,7 +48,8 @@
 
 // Active state
 .btn.active,
-.btn:active {
+.btn:active,
+.form-submit:active {
   background-image: none;
   $shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
   @include box-shadow($shadow);
@@ -116,7 +117,9 @@
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.btn-inverse:hover {
+.btn-inverse:hover,
+.form-submit,
+.form-submit:hover {
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   color: $white;
 }
@@ -132,7 +135,7 @@
 
 // Set the backgrounds
 // -------------------------
-.btn-primary {
+.btn-primary, .form-submit {
   @include buttonBackground($primaryButtonBackground, adjust-hue($primaryButtonBackground, 20));
 }
 // Warning appears are orange
@@ -140,7 +143,7 @@
   @include buttonBackground(lighten($orange, 15%), $orange);
 }
 // Danger and error appear as red
-.btn-danger {
+.btn-danger, #edit-delete {
   @include buttonBackground(#ee5f5b, #bd362f);
 }
 // Success appears as green

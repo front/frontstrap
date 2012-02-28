@@ -174,7 +174,7 @@ body {
 }
 
 /* line 26, partials/bootstrap/_scaffolding.scss */
-a {
+a, a:visited {
   color: #0088cc;
   text-decoration: none;
 }
@@ -1140,23 +1140,23 @@ textarea[readonly] {
 }
 
 /* line 288, partials/bootstrap/_mixins.scss */
-.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline {
+.control-group.error > label, .control-group.error .help-block, .control-group.error .help-inline, .form-item input.error > label, .form-item input.error .help-block, .form-item input.error .help-inline, .form-item textarea.error > label, .form-item textarea.error .help-block, .form-item textarea.error .help-inline, .form-item select.error > label, .form-item select.error .help-block, .form-item select.error .help-inline {
   color: #b94a48;
 }
 /* line 294, partials/bootstrap/_mixins.scss */
-.control-group.error input, .control-group.error select, .control-group.error textarea {
+.control-group.error input, .control-group.error select, .control-group.error textarea, .form-item input.error input, .form-item input.error select, .form-item input.error textarea, .form-item textarea.error input, .form-item textarea.error select, .form-item textarea.error textarea, .form-item select.error input, .form-item select.error select, .form-item select.error textarea {
   color: #b94a48;
   border-color: #b94a48;
 }
 /* line 297, partials/bootstrap/_mixins.scss */
-.control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus {
+.control-group.error input:focus, .control-group.error select:focus, .control-group.error textarea:focus, .form-item input.error input:focus, .form-item input.error select:focus, .form-item input.error textarea:focus, .form-item textarea.error input:focus, .form-item textarea.error select:focus, .form-item textarea.error textarea:focus, .form-item select.error input:focus, .form-item select.error select:focus, .form-item select.error textarea:focus {
   border-color: #953b39;
   -webkit-box-shadow: 0 0 6px #d59392;
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
 }
 /* line 304, partials/bootstrap/_mixins.scss */
-.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on {
+.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on, .form-item input.error .input-prepend .add-on, .form-item input.error .input-append .add-on, .form-item textarea.error .input-prepend .add-on, .form-item textarea.error .input-append .add-on, .form-item select.error .input-prepend .add-on, .form-item select.error .input-append .add-on {
   color: #b94a48;
   background-color: #f2dede;
   border-color: #b94a48;
@@ -2470,7 +2470,7 @@ table .span12 {
 }
 
 /* line 9, partials/bootstrap/_buttons.scss */
-.btn {
+.btn, .form-submit {
   display: inline-block;
   padding: 4px 10px 4px;
   margin-bottom: 0;
@@ -2501,24 +2501,25 @@ table .span12 {
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  margin-right: 5px;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   *margin-left: .3em;
 }
 /* line 529, partials/bootstrap/_mixins.scss */
-.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled], .form-submit:hover, .form-submit:active, .form-submit.active, .form-submit.disabled, .form-submit[disabled] {
   background-color: #e6e6e6;
 }
 /* line 535, partials/bootstrap/_mixins.scss */
-.btn:active, .btn.active {
+.btn:active, .btn.active, .form-submit:active, .form-submit.active {
   background-color: #cccccc \9;
 }
 /* line 58, partials/bootstrap/_mixins.scss */
-.btn:first-child {
+.btn:first-child, .form-submit:first-child {
   *margin-left: 0;
 }
 
 /* line 33, partials/bootstrap/_buttons.scss */
-.btn:hover {
+.btn:hover, .form-submit:hover {
   color: #333333;
   text-decoration: none;
   background-color: #e6e6e6;
@@ -2537,9 +2538,10 @@ table .span12 {
   outline-offset: -2px;
 }
 
-/* line 51, partials/bootstrap/_buttons.scss */
+/* line 52, partials/bootstrap/_buttons.scss */
 .btn.active,
-.btn:active {
+.btn:active,
+.form-submit:active {
   background-image: none;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2549,7 +2551,7 @@ table .span12 {
   outline: 0;
 }
 
-/* line 62, partials/bootstrap/_buttons.scss */
+/* line 63, partials/bootstrap/_buttons.scss */
 .btn.disabled,
 .btn[disabled] {
   cursor: default;
@@ -2562,7 +2564,7 @@ table .span12 {
   box-shadow: none;
 }
 
-/* line 75, partials/bootstrap/_buttons.scss */
+/* line 76, partials/bootstrap/_buttons.scss */
 .btn-large {
   padding: 9px 14px;
   font-size: 15px;
@@ -2572,31 +2574,31 @@ table .span12 {
   border-radius: 5px;
 }
 
-/* line 81, partials/bootstrap/_buttons.scss */
+/* line 82, partials/bootstrap/_buttons.scss */
 .btn-large [class^="icon-"] {
   margin-top: 1px;
 }
 
-/* line 86, partials/bootstrap/_buttons.scss */
+/* line 87, partials/bootstrap/_buttons.scss */
 .btn-small {
   padding: 5px 9px;
   font-size: 11px;
   line-height: 16px;
 }
 
-/* line 91, partials/bootstrap/_buttons.scss */
+/* line 92, partials/bootstrap/_buttons.scss */
 .btn-small [class^="icon-"] {
   margin-top: -1px;
 }
 
-/* line 96, partials/bootstrap/_buttons.scss */
+/* line 97, partials/bootstrap/_buttons.scss */
 .btn-mini {
   padding: 2px 6px;
   font-size: 11px;
   line-height: 14px;
 }
 
-/* line 119, partials/bootstrap/_buttons.scss */
+/* line 122, partials/bootstrap/_buttons.scss */
 .btn-primary,
 .btn-primary:hover,
 .btn-warning,
@@ -2608,12 +2610,14 @@ table .span12 {
 .btn-info,
 .btn-info:hover,
 .btn-inverse,
-.btn-inverse:hover {
+.btn-inverse:hover,
+.form-submit,
+.form-submit:hover {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   color: white;
 }
 
-/* line 129, partials/bootstrap/_buttons.scss */
+/* line 132, partials/bootstrap/_buttons.scss */
 .btn-primary.active,
 .btn-warning.active,
 .btn-danger.active,
@@ -2623,8 +2627,8 @@ table .span12 {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 135, partials/bootstrap/_buttons.scss */
-.btn-primary {
+/* line 138, partials/bootstrap/_buttons.scss */
+.btn-primary, .form-submit {
   background-color: #006ccc;
   background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
   background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
@@ -2639,15 +2643,15 @@ table .span12 {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* line 529, partials/bootstrap/_mixins.scss */
-.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled], .form-submit:hover, .form-submit:active, .form-submit.active, .form-submit.disabled, .form-submit[disabled] {
   background-color: #0044cc;
 }
 /* line 535, partials/bootstrap/_mixins.scss */
-.btn-primary:active, .btn-primary.active {
+.btn-primary:active, .btn-primary.active, .form-submit:active, .form-submit.active {
   background-color: #003399 \9;
 }
 
-/* line 139, partials/bootstrap/_buttons.scss */
+/* line 142, partials/bootstrap/_buttons.scss */
 .btn-warning {
   background-color: #f9a732;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
@@ -2671,8 +2675,8 @@ table .span12 {
   background-color: #c67605 \9;
 }
 
-/* line 143, partials/bootstrap/_buttons.scss */
-.btn-danger {
+/* line 146, partials/bootstrap/_buttons.scss */
+.btn-danger, #edit-delete {
   background-color: #da4e49;
   background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
   background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
@@ -2687,15 +2691,15 @@ table .span12 {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 /* line 529, partials/bootstrap/_mixins.scss */
-.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+.btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled], #edit-delete:hover, #edit-delete:active, #edit-delete.active, #edit-delete.disabled, #edit-delete[disabled] {
   background-color: #bd362f;
 }
 /* line 535, partials/bootstrap/_mixins.scss */
-.btn-danger:active, .btn-danger.active {
+.btn-danger:active, .btn-danger.active, #edit-delete:active, #edit-delete.active {
   background-color: #942a25 \9;
 }
 
-/* line 147, partials/bootstrap/_buttons.scss */
+/* line 150, partials/bootstrap/_buttons.scss */
 .btn-success {
   background-color: #5bb65b;
   background-image: -moz-linear-gradient(top, #62c462, #51a351);
@@ -2719,7 +2723,7 @@ table .span12 {
   background-color: #408140 \9;
 }
 
-/* line 151, partials/bootstrap/_buttons.scss */
+/* line 154, partials/bootstrap/_buttons.scss */
 .btn-info {
   background-color: #49afcd;
   background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
@@ -2743,7 +2747,7 @@ table .span12 {
   background-color: #24748c \9;
 }
 
-/* line 155, partials/bootstrap/_buttons.scss */
+/* line 158, partials/bootstrap/_buttons.scss */
 .btn-inverse {
   background-color: #383838;
   background-image: -moz-linear-gradient(top, #454545, #262626);
@@ -2767,25 +2771,25 @@ table .span12 {
   background-color: #0d0d0d \9;
 }
 
-/* line 164, partials/bootstrap/_buttons.scss */
+/* line 167, partials/bootstrap/_buttons.scss */
 button.btn,
 input[type="submit"].btn {
   *padding-top: 2px;
   *padding-bottom: 2px;
 }
-/* line 167, partials/bootstrap/_buttons.scss */
+/* line 170, partials/bootstrap/_buttons.scss */
 button.btn::-moz-focus-inner,
 input[type="submit"].btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-/* line 175, partials/bootstrap/_buttons.scss */
+/* line 178, partials/bootstrap/_buttons.scss */
 button.btn.large,
 input[type="submit"].btn.large {
   *padding-top: 7px;
   *padding-bottom: 7px;
 }
-/* line 179, partials/bootstrap/_buttons.scss */
+/* line 182, partials/bootstrap/_buttons.scss */
 button.btn.small,
 input[type="submit"].btn.small {
   *padding-top: 3px;
@@ -3008,8 +3012,8 @@ input[type="submit"].btn.small {
 .alert-danger,
 .alert-error,
 .alert-danger .alert-heading,
-.alert-error .alert-heading
-.div.error {
+.alert-error .alert-heading,
+div.error {
   color: #b94a48;
 }
 
@@ -4808,6 +4812,13 @@ a.thumbnail:hover {
 
 /* Layout */
 /* General Styles (Colors, Backgrounds etc.)*/
+/* line 85, frontstrap.scss */
+.vertical-tabs .form-type-textfield input {
+  -moz-box-sizing: content-box;
+  /* prevet from collapsing in FF*/
+  width: 100%;
+}
+
 /* Typography */
 /* Links */
 /* header */

@@ -82,6 +82,11 @@
 
   /* General Styles (Colors, Backgrounds etc.)*/
 
+  .vertical-tabs .form-type-textfield input {
+  -moz-box-sizing: content-box; /* prevet from collapsing in FF*/
+  width: 100%;
+}
+
   /* Typography */
 
   /* Links */

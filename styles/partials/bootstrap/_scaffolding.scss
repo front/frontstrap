@@ -23,7 +23,7 @@ body {
 // LINKS
 // -----
 
-a {
+a, a:visited {
   color: $linkColor;
   text-decoration: none;
 }
