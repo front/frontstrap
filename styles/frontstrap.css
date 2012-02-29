@@ -3935,6 +3935,7 @@ div.warning {
 /* line 58, partials/bootstrap/_pagination.scss */
 .item-list code {
   background-color: transparent;
+  color: #000;
   border: none;
   padding: 0;
   margin: 0;
