@@ -3886,7 +3886,7 @@ div.warning {
   padding: 0;
 }
 /* line 21, partials/bootstrap/_pagination.scss */
-.item-list .pager a {
+.item-list .pager a, .item-list li.pager-current {
   float: left;
   padding: 0 14px;
   line-height: 34px;
@@ -3894,45 +3894,46 @@ div.warning {
   border: 1px solid #ddd;
   border-left-width: 0;
 }
-/* line 30, partials/bootstrap/_pagination.scss */
+/* line 31, partials/bootstrap/_pagination.scss */
 .item-list .pager a:hover,
-.item-list .pager .active a {
+.item-list .pager .active a,
+.item-list li.pager-current {
   background-color: #f5f5f5;
 }
-/* line 33, partials/bootstrap/_pagination.scss */
-.item-list .pager .active a {
+/* line 34, partials/bootstrap/_pagination.scss */
+.item-list .pager .active a, .item-list li.pager-current {
   color: #999999;
   cursor: default;
 }
-/* line 38, partials/bootstrap/_pagination.scss */
+/* line 39, partials/bootstrap/_pagination.scss */
 .item-list .pager .disabled a,
 .item-list .pager .disabled a:hover {
   color: #999999;
   background-color: transparent;
   cursor: default;
 }
-/* line 43, partials/bootstrap/_pagination.scss */
+/* line 44, partials/bootstrap/_pagination.scss */
 .item-list .pager li:first-child a {
   border-left-width: 1px;
   -webkit-border-radius: 3px 0 0 3px;
   -moz-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
 }
-/* line 47, partials/bootstrap/_pagination.scss */
+/* line 48, partials/bootstrap/_pagination.scss */
 .item-list .pager li:last-child a {
   -webkit-border-radius: 0 3px 3px 0;
   -moz-border-radius: 0 3px 3px 0;
   border-radius: 0 3px 3px 0;
 }
-/* line 52, partials/bootstrap/_pagination.scss */
+/* line 53, partials/bootstrap/_pagination.scss */
 .item-list .pager-centered {
   text-align: center;
 }
-/* line 55, partials/bootstrap/_pagination.scss */
+/* line 56, partials/bootstrap/_pagination.scss */
 .item-list .pager-right {
   text-align: right;
 }
-/* line 58, partials/bootstrap/_pagination.scss */
+/* line 59, partials/bootstrap/_pagination.scss */
 .item-list code {
   background-color: transparent;
   color: #000;
@@ -4762,12 +4763,32 @@ a.thumbnail:hover {
 }
 
 /* Layout */
-/* General Styles (Colors, Backgrounds etc.)*/
+/* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
 /* line 84, frontstrap.scss */
 .vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box;
   /* prevet from collapsing in FF*/
   width: 100%;
+}
+
+/* line 88, frontstrap.scss */
+li a.active {
+  color: #0088CC;
+}
+
+/* line 91, frontstrap.scss */
+.submitted {
+  color: #999;
+}
+
+/* line 94, frontstrap.scss */
+.field-type-image {
+  margin: 0 0 20px 0;
+}
+
+/* line 97, frontstrap.scss */
+.field-name-body {
+  margin: 20px 0;
 }
 
 /* Typography */

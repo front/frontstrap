@@ -79,11 +79,23 @@
 
   /* Layout */
 
-  /* General Styles (Colors, Backgrounds etc.)*/
+  /* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
 
-  .vertical-tabs .form-type-textfield input {
+.vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box; /* prevet from collapsing in FF*/
   width: 100%;
+}
+li a.active {
+  color: #0088CC;
+  }
+.submitted {
+  color: #999;
+}
+.field-type-image {
+  margin: 0 0 20px 0;
+}
+.field-name-body {
+  margin: 20px 0;
 }
 
   /* Typography */
