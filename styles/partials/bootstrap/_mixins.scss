@@ -9,7 +9,7 @@
 // Clearfix
 // --------
 // For clearing floats like a boss h5bp.com/q
-@mixin clearfix() {
+@mixin clearfix {
   *zoom: 1;
   &:before,
   &:after {
@@ -23,7 +23,7 @@
 
 // Webkit-style focus
 // ------------------
-@mixin tab-focus() {
+@mixin tab-focus {
   // Default
   outline: thin dotted #333;
   // Webkit
@@ -33,7 +33,7 @@
 
 // Center-align a block level element
 // ----------------------------------
-@mixin center-block() {
+@mixin center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +41,7 @@
 
 // IE7 inline-block
 // ----------------
-@mixin ie7-inline-block() {
+@mixin ie7-inline-block {
   *display: inline; /* IE7 inline-block hack */
   *zoom: 1;
 }
@@ -52,7 +52,7 @@
 // right version is for icons, which come before. Applying both is ok, but it will
 // mean that space between those elements will be .6em (~2 space characters) in IE7,
 // instead of the 1 space in other browsers.
-@mixin ie7-restore-left-whitespace() {
+@mixin ie7-restore-left-whitespace {
   *margin-left: .3em;
 
   &:first-child {
@@ -60,7 +60,7 @@
   }
 }
 
-@mixin ie7-restore-right-whitespace() {
+@mixin ie7-restore-right-whitespace {
   *margin-right: .3em;
 
   &:last-child {
@@ -92,7 +92,7 @@
 // Text overflow
 // -------------------------
 // Requires inline-block or block for proper styling
-@mixin text-overflow() {
+@mixin text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -138,11 +138,11 @@
 
 // Site container
 // -------------------------
-@mixin container-fixed() {
+@mixin container-fixed {
   width: $gridRowWidth;
   margin-left: auto;
   margin-right: auto;
-  @include clearfix();
+  @include clearfix;
 }
 
 // Le grid system
@@ -163,7 +163,7 @@
   // Row surrounds the columns
   .row {
     margin-left: $gridGutterWidth * -1;
-    @include clearfix();
+    @include clearfix;
   }
   // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks $dhg)
   [class*="span"] {
@@ -211,7 +211,7 @@
   // Row surrounds the columns
   .row-fluid {
     width: 100%;
-    @include clearfix();
+    @include clearfix;
 
     // Find all .span# classes within .row and give them the necessary properties for grid columns (supported by all browsers back to IE7, thanks $dhg)
     > [class*="span"] {
@@ -265,9 +265,9 @@
 // Make a Grid
 // -------------------------
 // Use .makeRow and .makeColumn to assign semantic layouts grid system behavior
-@mixin makeRow() {
+@mixin makeRow {
   margin-left: $gridGutterWidth * -1;
-  @include clearfix();
+  @include clearfix;
 }
 @mixin makeColumn($columns: 1) {
   float: left;
@@ -514,7 +514,7 @@
 }
 
 // Reset filters for IE
-@mixin reset-filter() {
+@mixin reset-filter {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
@@ -523,7 +523,7 @@
 @mixin buttonBackground($startColor, $endColor) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   @include gradientBar($startColor, $endColor);
-  @include reset-filter();
+  @include reset-filter;
 
   // in these cases the gradient won't cover the background, so we override
   &:hover, &:active, &.active, &.disabled, &[disabled] {
