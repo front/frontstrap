@@ -3053,24 +3053,26 @@ div.warning {
 }
 
 /* line 9, partials/bootstrap/_navs.scss */
-.nav {
+.nav, .tabs.primary {
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-/* line 16, partials/bootstrap/_navs.scss */
+/* line 18, partials/bootstrap/_navs.scss */
 .nav > li > a {
   display: block;
 }
 
-/* line 19, partials/bootstrap/_navs.scss */
+/* line 21, partials/bootstrap/_navs.scss */
 .nav > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-/* line 25, partials/bootstrap/_navs.scss */
+/* line 27, partials/bootstrap/_navs.scss */
 .nav .nav-header {
   display: block;
   padding: 3px 15px;
@@ -3082,19 +3084,19 @@ div.warning {
   text-transform: uppercase;
 }
 
-/* line 36, partials/bootstrap/_navs.scss */
+/* line 38, partials/bootstrap/_navs.scss */
 .nav li + .nav-header {
   margin-top: 9px;
 }
 
-/* line 44, partials/bootstrap/_navs.scss */
+/* line 46, partials/bootstrap/_navs.scss */
 .nav-list {
   padding-left: 14px;
   padding-right: 14px;
   margin-bottom: 0;
 }
 
-/* line 50, partials/bootstrap/_navs.scss */
+/* line 52, partials/bootstrap/_navs.scss */
 .nav-list > li > a,
 .nav-list .nav-header {
   margin-left: -15px;
@@ -3102,12 +3104,12 @@ div.warning {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* line 55, partials/bootstrap/_navs.scss */
+/* line 57, partials/bootstrap/_navs.scss */
 .nav-list > li > a {
   padding: 3px 15px;
 }
 
-/* line 59, partials/bootstrap/_navs.scss */
+/* line 61, partials/bootstrap/_navs.scss */
 .nav-list .active > a,
 .nav-list .active > a:hover {
   color: white;
@@ -3115,12 +3117,12 @@ div.warning {
   background-color: #0088cc;
 }
 
-/* line 64, partials/bootstrap/_navs.scss */
+/* line 66, partials/bootstrap/_navs.scss */
 .nav-list [class^="icon-"] {
   margin-right: 2px;
 }
 
-/* line 76, partials/bootstrap/_navs.scss */
+/* line 78, partials/bootstrap/_navs.scss */
 .nav-tabs,
 .nav-pills,
 .tabs.primary {
@@ -3142,35 +3144,35 @@ div.warning {
   clear: both;
 }
 
-/* line 81, partials/bootstrap/_navs.scss */
+/* line 83, partials/bootstrap/_navs.scss */
 .nav-tabs > li,
 .nav-pills > li,
 .tabs.primary > li {
   float: left;
 }
 
-/* line 86, partials/bootstrap/_navs.scss */
+/* line 88, partials/bootstrap/_navs.scss */
 .nav-tabs > li > a,
 .nav-pills > li > a,
-.tabs.primary > li > a span {
+.tabs.primary > li > a {
   padding-right: 12px;
   padding-left: 12px;
   margin-right: 2px;
   line-height: 14px;
 }
 
-/* line 97, partials/bootstrap/_navs.scss */
+/* line 99, partials/bootstrap/_navs.scss */
 .nav-tabs, .tabs.primary {
   border-bottom: 1px solid #ddd;
 }
 
-/* line 103, partials/bootstrap/_navs.scss */
+/* line 105, partials/bootstrap/_navs.scss */
 .nav-tabs > li,
 .tabs.primary > li {
   margin-bottom: -1px;
 }
 
-/* line 109, partials/bootstrap/_navs.scss */
+/* line 111, partials/bootstrap/_navs.scss */
 .nav-tabs > li > a,
 .tabs.primary > li > a {
   background-color: #fff;
@@ -3181,13 +3183,13 @@ div.warning {
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
-/* line 115, partials/bootstrap/_navs.scss */
+/* line 117, partials/bootstrap/_navs.scss */
 .nav-tabs > li > a:hover,
 .tabs.primary > li > a:hover {
   border-color: #eeeeee #eeeeee #dddddd;
 }
 
-/* line 123, partials/bootstrap/_navs.scss */
+/* line 125, partials/bootstrap/_navs.scss */
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .tabs.primary > .active > a,
@@ -3199,7 +3201,7 @@ div.warning {
   cursor: default;
 }
 
-/* line 135, partials/bootstrap/_navs.scss */
+/* line 137, partials/bootstrap/_navs.scss */
 .nav-pills > li > a {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -3210,29 +3212,29 @@ div.warning {
   border-radius: 5px;
 }
 
-/* line 145, partials/bootstrap/_navs.scss */
+/* line 147, partials/bootstrap/_navs.scss */
 .nav-pills .active > a,
 .nav-pills .active > a:hover {
   color: white;
   background-color: #0088cc;
 }
 
-/* line 156, partials/bootstrap/_navs.scss */
+/* line 158, partials/bootstrap/_navs.scss */
 .nav-stacked > li {
   float: none;
 }
 
-/* line 159, partials/bootstrap/_navs.scss */
+/* line 161, partials/bootstrap/_navs.scss */
 .nav-stacked > li > a {
   margin-right: 0;
 }
 
-/* line 164, partials/bootstrap/_navs.scss */
+/* line 166, partials/bootstrap/_navs.scss */
 .nav-tabs.nav-stacked {
   border-bottom: 0;
 }
 
-/* line 167, partials/bootstrap/_navs.scss */
+/* line 169, partials/bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li > a {
   border: 1px solid #ddd;
   -webkit-border-radius: 0;
@@ -3240,76 +3242,76 @@ div.warning {
   border-radius: 0;
 }
 
-/* line 171, partials/bootstrap/_navs.scss */
+/* line 173, partials/bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li:first-child > a {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
 
-/* line 174, partials/bootstrap/_navs.scss */
+/* line 176, partials/bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li:last-child > a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
 
-/* line 177, partials/bootstrap/_navs.scss */
+/* line 179, partials/bootstrap/_navs.scss */
 .nav-tabs.nav-stacked > li > a:hover {
   border-color: #ddd;
   z-index: 2;
 }
 
-/* line 183, partials/bootstrap/_navs.scss */
+/* line 185, partials/bootstrap/_navs.scss */
 .nav-pills.nav-stacked > li > a {
   margin-bottom: 3px;
 }
 
-/* line 186, partials/bootstrap/_navs.scss */
+/* line 188, partials/bootstrap/_navs.scss */
 .nav-pills.nav-stacked > li:last-child > a {
   margin-bottom: 1px;
 }
 
-/* line 197, partials/bootstrap/_navs.scss */
+/* line 199, partials/bootstrap/_navs.scss */
 .nav-tabs .dropdown-menu,
 .nav-pills .dropdown-menu {
   margin-top: 1px;
   border-width: 1px;
 }
 
-/* line 201, partials/bootstrap/_navs.scss */
+/* line 203, partials/bootstrap/_navs.scss */
 .nav-pills .dropdown-menu {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 
-/* line 209, partials/bootstrap/_navs.scss */
+/* line 211, partials/bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle .caret,
 .nav-pills .dropdown-toggle .caret {
   border-top-color: #0088cc;
   margin-top: 6px;
 }
 
-/* line 214, partials/bootstrap/_navs.scss */
+/* line 216, partials/bootstrap/_navs.scss */
 .nav-tabs .dropdown-toggle:hover .caret,
 .nav-pills .dropdown-toggle:hover .caret {
   border-top-color: #005580;
 }
 
-/* line 221, partials/bootstrap/_navs.scss */
+/* line 223, partials/bootstrap/_navs.scss */
 .nav-tabs .active .dropdown-toggle .caret,
 .nav-pills .active .dropdown-toggle .caret {
   border-top-color: #333333;
 }
 
-/* line 227, partials/bootstrap/_navs.scss */
+/* line 229, partials/bootstrap/_navs.scss */
 .nav > .dropdown.active > a:hover {
   color: black;
   cursor: pointer;
 }
 
-/* line 236, partials/bootstrap/_navs.scss */
+/* line 238, partials/bootstrap/_navs.scss */
 .nav-tabs .open .dropdown-toggle,
 .nav-pills .open .dropdown-toggle,
 .nav > .open.active > a:hover {
@@ -3318,7 +3320,7 @@ div.warning {
   border-color: #999999;
 }
 
-/* line 243, partials/bootstrap/_navs.scss */
+/* line 245, partials/bootstrap/_navs.scss */
 .nav .open .caret,
 .nav .open.active .caret,
 .nav .open a:hover .caret {
@@ -3327,12 +3329,12 @@ div.warning {
   filter: alpha(opacity=100);
 }
 
-/* line 249, partials/bootstrap/_navs.scss */
+/* line 251, partials/bootstrap/_navs.scss */
 .tabs-stacked .open > a:hover {
   border-color: #999999;
 }
 
-/* line 263, partials/bootstrap/_navs.scss */
+/* line 265, partials/bootstrap/_navs.scss */
 .tabbable {
   *zoom: 1;
 }
@@ -3346,66 +3348,66 @@ div.warning {
   clear: both;
 }
 
-/* line 266, partials/bootstrap/_navs.scss */
+/* line 268, partials/bootstrap/_navs.scss */
 .tab-content {
   overflow: hidden;
 }
 
-/* line 273, partials/bootstrap/_navs.scss */
+/* line 275, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs,
 .tabs-right .nav-tabs,
 .tabs-left .nav-tabs {
   border-bottom: 0;
 }
 
-/* line 279, partials/bootstrap/_navs.scss */
+/* line 281, partials/bootstrap/_navs.scss */
 .tab-content > .tab-pane,
 .pill-content > .pill-pane {
   display: none;
 }
 
-/* line 283, partials/bootstrap/_navs.scss */
+/* line 285, partials/bootstrap/_navs.scss */
 .tab-content > .active,
 .pill-content > .active {
   display: block;
 }
 
-/* line 291, partials/bootstrap/_navs.scss */
+/* line 293, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs {
   border-top: 1px solid #ddd;
 }
 
-/* line 294, partials/bootstrap/_navs.scss */
+/* line 296, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs > li {
   margin-top: -1px;
   margin-bottom: 0;
 }
 
-/* line 298, partials/bootstrap/_navs.scss */
+/* line 300, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs > li > a {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
 }
-/* line 300, partials/bootstrap/_navs.scss */
+/* line 302, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs > li > a:hover {
   border-bottom-color: transparent;
   border-top-color: #ddd;
 }
 
-/* line 306, partials/bootstrap/_navs.scss */
+/* line 308, partials/bootstrap/_navs.scss */
 .tabs-below .nav-tabs .active > a,
 .tabs-below .nav-tabs .active > a:hover {
   border-color: transparent #ddd #ddd #ddd;
 }
 
-/* line 315, partials/bootstrap/_navs.scss */
+/* line 317, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs > li,
 .tabs-right .nav-tabs > li {
   float: none;
 }
 
-/* line 319, partials/bootstrap/_navs.scss */
+/* line 321, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs > li > a,
 .tabs-right .nav-tabs > li > a {
   min-width: 74px;
@@ -3413,14 +3415,14 @@ div.warning {
   margin-bottom: 3px;
 }
 
-/* line 326, partials/bootstrap/_navs.scss */
+/* line 328, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs {
   float: left;
   margin-right: 19px;
   border-right: 1px solid #ddd;
 }
 
-/* line 331, partials/bootstrap/_navs.scss */
+/* line 333, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs > li > a {
   margin-right: -1px;
   -webkit-border-radius: 4px 0 0 4px;
@@ -3428,26 +3430,26 @@ div.warning {
   border-radius: 4px 0 0 4px;
 }
 
-/* line 335, partials/bootstrap/_navs.scss */
+/* line 337, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs > li > a:hover {
   border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 
-/* line 339, partials/bootstrap/_navs.scss */
+/* line 341, partials/bootstrap/_navs.scss */
 .tabs-left .nav-tabs .active > a,
 .tabs-left .nav-tabs .active > a:hover {
   border-color: #ddd transparent #ddd #ddd;
   *border-right-color: white;
 }
 
-/* line 345, partials/bootstrap/_navs.scss */
+/* line 347, partials/bootstrap/_navs.scss */
 .tabs-right .nav-tabs {
   float: right;
   margin-left: 19px;
   border-left: 1px solid #ddd;
 }
 
-/* line 350, partials/bootstrap/_navs.scss */
+/* line 352, partials/bootstrap/_navs.scss */
 .tabs-right .nav-tabs > li > a {
   margin-left: -1px;
   -webkit-border-radius: 0 4px 4px 0;
@@ -3455,12 +3457,12 @@ div.warning {
   border-radius: 0 4px 4px 0;
 }
 
-/* line 354, partials/bootstrap/_navs.scss */
+/* line 356, partials/bootstrap/_navs.scss */
 .tabs-right .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #eeeeee #dddddd;
 }
 
-/* line 358, partials/bootstrap/_navs.scss */
+/* line 360, partials/bootstrap/_navs.scss */
 .tabs-right .nav-tabs .active > a,
 .tabs-right .nav-tabs .active > a:hover {
   border-color: #ddd #ddd #ddd transparent;
@@ -4776,29 +4778,29 @@ a.thumbnail:hover {
 
 /* Layout */
 /* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
-/* line 84, frontstrap.scss */
+/* line 82, frontstrap.scss */
 .vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box;
   /* prevet from collapsing in FF*/
   width: 100%;
 }
 
-/* line 88, frontstrap.scss */
+/* line 86, frontstrap.scss */
 li a.active {
   color: #0088CC;
 }
 
-/* line 91, frontstrap.scss */
+/* line 89, frontstrap.scss */
 .submitted {
   color: #999;
 }
 
-/* line 94, frontstrap.scss */
+/* line 92, frontstrap.scss */
 .field-type-image {
   margin: 0 0 20px 0;
 }
 
-/* line 97, frontstrap.scss */
+/* line 95, frontstrap.scss */
 .field-name-body {
   margin: 20px 0;
 }

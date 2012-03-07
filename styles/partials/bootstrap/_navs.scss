@@ -6,10 +6,12 @@
 // BASE CLASS
 // ----------
 
-.nav {
+.nav, .tabs.primary {
   margin-left: 0;
   margin-bottom: $baseLineHeight;
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 // Make links block level
@@ -83,7 +85,7 @@
 }
 .nav-tabs > li > a,
 .nav-pills > li > a,
-.tabs.primary> li > a span {
+.tabs.primary> li > a {
   padding-right: 12px;
   padding-left: 12px;
   margin-right: 2px;
