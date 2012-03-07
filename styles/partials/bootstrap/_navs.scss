@@ -72,15 +72,18 @@
 
 // Common styles
 .nav-tabs,
-.nav-pills {
+.nav-pills,
+.tabs.primary{
   @include clearfix();
 }
 .nav-tabs > li,
-.nav-pills > li {
+.nav-pills > li,
+.tabs.primary> li {
   float: left;
 }
 .nav-tabs > li > a,
-.nav-pills > li > a {
+.nav-pills > li > a,
+.tabs.primary> li > a span {
   padding-right: 12px;
   padding-left: 12px;
   margin-right: 2px;
@@ -91,17 +94,20 @@
 // ----
 
 // Give the tabs something to sit on
-.nav-tabs {
+.nav-tabs, .tabs.primary{
   border-bottom: 1px solid #ddd;
 }
 
 // Make the list-items overlay the bottom border
-.nav-tabs > li {
+.nav-tabs > li,
+.tabs.primary> li {
   margin-bottom: -1px;
 }
 
 // Actual tabs (as links)
-.nav-tabs > li > a {
+.nav-tabs > li > a,
+.tabs.primary> li > a {
+  background-color: #fff;
   padding-top: 9px;
   padding-bottom: 9px;
   border: 1px solid transparent;
@@ -112,7 +118,9 @@
 }
 // Active state, and it's :hover to override normal :hover
 .nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
+.nav-tabs > .active > a:hover,
+.tabs.primary> .active > a,
+.tabs.primary> .active > a:hover {
   color: $gray;
   background-color: $white;
   border: 1px solid #ddd;
