@@ -115,4 +115,17 @@ li a.active {
 
 /*         Forms
  *************************************************/
+html.js input.form-autocomplete {
+background-position: 100% 7px;
+}
 
+.node-form {
+  label {
+    font-weight: bold;
+  }
+  .image-preview {
+    padding: 7px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+  }
+}
