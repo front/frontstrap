@@ -4776,31 +4776,35 @@ a.thumbnail:hover {
   visibility: hidden;
 }
 
-/* Layout */
-/* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
-/* line 82, frontstrap.scss */
-.vertical-tabs .form-type-textfield input {
-  -moz-box-sizing: content-box;
-  /* prevet from collapsing in FF*/
-  width: 100%;
+/* Hide! */
+/* line 79, frontstrap.scss */
+.filter-guidelines-item, .filter-help {
+  display: none !important;
 }
 
+/* Layout */
+/* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
 /* line 86, frontstrap.scss */
+div.tabs {
+  margin-top: 20px;
+}
+
+/* line 90, frontstrap.scss */
 li a.active {
   color: #0088CC;
 }
 
-/* line 89, frontstrap.scss */
+/* line 93, frontstrap.scss */
 .submitted {
   color: #999;
 }
 
-/* line 92, frontstrap.scss */
+/* line 96, frontstrap.scss */
 .field-type-image {
   margin: 0 0 20px 0;
 }
 
-/* line 95, frontstrap.scss */
+/* line 99, frontstrap.scss */
 .field-name-body {
   margin: 20px 0;
 }
@@ -4816,18 +4820,28 @@ li a.active {
  *************************************************/
 /*         Forms
  *************************************************/
-/* line 118, frontstrap.scss */
+/* line 122, frontstrap.scss */
 html.js input.form-autocomplete {
   background-position: 100% 7px;
 }
 
-/* line 123, frontstrap.scss */
+/* line 127, frontstrap.scss */
 .node-form label {
   font-weight: bold;
 }
-/* line 126, frontstrap.scss */
+/* line 130, frontstrap.scss */
+.node-form input.form-text {
+  width: 98%;
+}
+/* line 133, frontstrap.scss */
 .node-form .image-preview {
   padding: 7px;
   border: 1px solid #ccc;
   margin-right: 20px;
+}
+/* line 138, frontstrap.scss */
+.node-form .vertical-tabs .form-type-textfield input {
+  -moz-box-sizing: content-box;
+  /* prevet from collapsing in FF*/
+  width: 100%;
 }
