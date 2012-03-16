@@ -1640,628 +1640,823 @@ table .span12 {
   margin-left: 0;
 }
 
-/* line 18, partials/bootstrap/_sprites.scss */
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url('fonts/../../../font/fontawesome-webfont.eot');
+  src: url('fonts/../../../font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../../../font/fontawesome-webfont.woff') format('woff'), url('fonts/../../../font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../../../font/fontawesome-webfont.otf') format('opentype'), url('fonts/../../../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('fonts/../../../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* sprites.less reset */
+/* line 42, partials/bootstrap/_font-awesome.scss */
 [class^="icon-"],
 [class*=" icon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+}
+
+/* line 53, partials/bootstrap/_font-awesome.scss */
+li[class^="icon-"],
+li[class*=" icon-"] {
+  display: block;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+/* line 60, partials/bootstrap/_font-awesome.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
   display: inline-block;
-  width: 14px;
-  height: 14px;
-  line-height: 14px;
-  vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
-  background-position: 14px 14px;
-  background-repeat: no-repeat;
-  *margin-right: .3em;
+  text-decoration: inherit;
 }
-/* line 66, partials/bootstrap/_mixins.scss */
-[class^="icon-"]:last-child,
-[class*=" icon-"]:last-child {
-  *margin-left: 0;
+
+/* line 69, partials/bootstrap/_font-awesome.scss */
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 75, partials/bootstrap/_font-awesome.scss */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 4/3em;
+}
+
+/* line 82, partials/bootstrap/_font-awesome.scss */
+.btn [class^="icon-"],
+.btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+  line-height: .9em;
+}
+
+/* line 90, partials/bootstrap/_font-awesome.scss */
+li [class^="icon-"],
+li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+/* line 96, partials/bootstrap/_font-awesome.scss */
+li .icon-large[class^="icon-"],
+li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+  width: 1.875em;
+}
+
+/* line 103, partials/bootstrap/_font-awesome.scss */
+li[class^="icon-"],
+li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+/* line 107, partials/bootstrap/_font-awesome.scss */
+li[class^="icon-"]:before,
+li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+/* line 111, partials/bootstrap/_font-awesome.scss */
+li[class^="icon-"].icon-large:before,
+li[class*=" icon-"].icon-large:before {
+  text-indent: -4/3em;
+}
+
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+/* line 118, partials/bootstrap/_font-awesome.scss */
+.icon-glass:before {
+  content: "\f000";
+}
+
+/* line 119, partials/bootstrap/_font-awesome.scss */
+.icon-music:before {
+  content: "\f001";
+}
+
+/* line 120, partials/bootstrap/_font-awesome.scss */
+.icon-search:before {
+  content: "\f002";
+}
+
+/* line 121, partials/bootstrap/_font-awesome.scss */
+.icon-envelope:before {
+  content: "\f003";
+}
+
+/* line 122, partials/bootstrap/_font-awesome.scss */
+.icon-heart:before {
+  content: "\f004";
+}
+
+/* line 123, partials/bootstrap/_font-awesome.scss */
+.icon-star:before {
+  content: "\f005";
+}
+
+/* line 124, partials/bootstrap/_font-awesome.scss */
+.icon-star-empty:before {
+  content: "\f006";
+}
+
+/* line 125, partials/bootstrap/_font-awesome.scss */
+.icon-user:before {
+  content: "\f007";
+}
+
+/* line 126, partials/bootstrap/_font-awesome.scss */
+.icon-film:before {
+  content: "\f008";
+}
+
+/* line 127, partials/bootstrap/_font-awesome.scss */
+.icon-th-large:before {
+  content: "\f009";
+}
+
+/* line 128, partials/bootstrap/_font-awesome.scss */
+.icon-th:before {
+  content: "\f00a";
+}
+
+/* line 129, partials/bootstrap/_font-awesome.scss */
+.icon-th-list:before {
+  content: "\f00b";
+}
+
+/* line 130, partials/bootstrap/_font-awesome.scss */
+.icon-ok:before {
+  content: "\f00c";
+}
+
+/* line 131, partials/bootstrap/_font-awesome.scss */
+.icon-remove:before {
+  content: "\f00d";
+}
+
+/* line 132, partials/bootstrap/_font-awesome.scss */
+.icon-zoom-in:before {
+  content: "\f00e";
+}
+
+/* line 134, partials/bootstrap/_font-awesome.scss */
+.icon-zoom-out:before {
+  content: "\f010";
+}
+
+/* line 135, partials/bootstrap/_font-awesome.scss */
+.icon-off:before {
+  content: "\f011";
+}
+
+/* line 136, partials/bootstrap/_font-awesome.scss */
+.icon-signal:before {
+  content: "\f012";
+}
+
+/* line 137, partials/bootstrap/_font-awesome.scss */
+.icon-cog:before {
+  content: "\f013";
 }
 
-/* line 30, partials/bootstrap/_sprites.scss */
-.icon-white {
-  background-image: url("../img/glyphicons-halflings-white.png");
+/* line 138, partials/bootstrap/_font-awesome.scss */
+.icon-trash:before {
+  content: "\f014";
 }
 
-/* line 34, partials/bootstrap/_sprites.scss */
-.icon-glass {
-  background-position: 0      0;
+/* line 139, partials/bootstrap/_font-awesome.scss */
+.icon-home:before {
+  content: "\f015";
 }
 
-/* line 35, partials/bootstrap/_sprites.scss */
-.icon-music {
-  background-position: -24px 0;
+/* line 140, partials/bootstrap/_font-awesome.scss */
+.icon-file:before {
+  content: "\f016";
 }
 
-/* line 36, partials/bootstrap/_sprites.scss */
-.icon-search {
-  background-position: -48px 0;
+/* line 141, partials/bootstrap/_font-awesome.scss */
+.icon-time:before {
+  content: "\f017";
 }
 
-/* line 37, partials/bootstrap/_sprites.scss */
-.icon-envelope {
-  background-position: -72px 0;
+/* line 142, partials/bootstrap/_font-awesome.scss */
+.icon-road:before {
+  content: "\f018";
 }
 
-/* line 38, partials/bootstrap/_sprites.scss */
-.icon-heart {
-  background-position: -96px 0;
+/* line 143, partials/bootstrap/_font-awesome.scss */
+.icon-download-alt:before {
+  content: "\f019";
 }
 
-/* line 39, partials/bootstrap/_sprites.scss */
-.icon-star {
-  background-position: -120px 0;
+/* line 144, partials/bootstrap/_font-awesome.scss */
+.icon-download:before {
+  content: "\f01a";
 }
 
-/* line 40, partials/bootstrap/_sprites.scss */
-.icon-star-empty {
-  background-position: -144px 0;
+/* line 145, partials/bootstrap/_font-awesome.scss */
+.icon-upload:before {
+  content: "\f01b";
 }
 
-/* line 41, partials/bootstrap/_sprites.scss */
-.icon-user {
-  background-position: -168px 0;
+/* line 146, partials/bootstrap/_font-awesome.scss */
+.icon-inbox:before {
+  content: "\f01c";
 }
 
-/* line 42, partials/bootstrap/_sprites.scss */
-.icon-film {
-  background-position: -192px 0;
+/* line 147, partials/bootstrap/_font-awesome.scss */
+.icon-play-circle:before {
+  content: "\f01d";
 }
 
-/* line 43, partials/bootstrap/_sprites.scss */
-.icon-th-large {
-  background-position: -216px 0;
+/* line 148, partials/bootstrap/_font-awesome.scss */
+.icon-repeat:before {
+  content: "\f01e";
 }
 
-/* line 44, partials/bootstrap/_sprites.scss */
-.icon-th {
-  background-position: -240px 0;
+/* \f020 is not a valid unicode character. all shifted one down */
+/* line 151, partials/bootstrap/_font-awesome.scss */
+.icon-refresh:before {
+  content: "\f021";
 }
 
-/* line 45, partials/bootstrap/_sprites.scss */
-.icon-th-list {
-  background-position: -264px 0;
+/* line 152, partials/bootstrap/_font-awesome.scss */
+.icon-list-alt:before {
+  content: "\f022";
 }
 
-/* line 46, partials/bootstrap/_sprites.scss */
-.icon-ok {
-  background-position: -288px 0;
+/* line 153, partials/bootstrap/_font-awesome.scss */
+.icon-lock:before {
+  content: "\f023";
 }
 
-/* line 47, partials/bootstrap/_sprites.scss */
-.icon-remove {
-  background-position: -312px 0;
+/* line 154, partials/bootstrap/_font-awesome.scss */
+.icon-flag:before {
+  content: "\f024";
 }
 
-/* line 48, partials/bootstrap/_sprites.scss */
-.icon-zoom-in {
-  background-position: -336px 0;
+/* line 155, partials/bootstrap/_font-awesome.scss */
+.icon-headphones:before {
+  content: "\f025";
 }
 
-/* line 49, partials/bootstrap/_sprites.scss */
-.icon-zoom-out {
-  background-position: -360px 0;
+/* line 156, partials/bootstrap/_font-awesome.scss */
+.icon-volume-off:before {
+  content: "\f026";
 }
 
-/* line 50, partials/bootstrap/_sprites.scss */
-.icon-off {
-  background-position: -384px 0;
+/* line 157, partials/bootstrap/_font-awesome.scss */
+.icon-volume-down:before {
+  content: "\f027";
 }
 
-/* line 51, partials/bootstrap/_sprites.scss */
-.icon-signal {
-  background-position: -408px 0;
+/* line 158, partials/bootstrap/_font-awesome.scss */
+.icon-volume-up:before {
+  content: "\f028";
 }
 
-/* line 52, partials/bootstrap/_sprites.scss */
-.icon-cog {
-  background-position: -432px 0;
+/* line 159, partials/bootstrap/_font-awesome.scss */
+.icon-qrcode:before {
+  content: "\f029";
 }
 
-/* line 53, partials/bootstrap/_sprites.scss */
-.icon-trash {
-  background-position: -456px 0;
+/* line 160, partials/bootstrap/_font-awesome.scss */
+.icon-barcode:before {
+  content: "\f02a";
 }
 
-/* line 55, partials/bootstrap/_sprites.scss */
-.icon-home {
-  background-position: 0 -24px;
+/* line 161, partials/bootstrap/_font-awesome.scss */
+.icon-tag:before {
+  content: "\f02b";
 }
 
-/* line 56, partials/bootstrap/_sprites.scss */
-.icon-file {
-  background-position: -24px -24px;
+/* line 162, partials/bootstrap/_font-awesome.scss */
+.icon-tags:before {
+  content: "\f02c";
 }
 
-/* line 57, partials/bootstrap/_sprites.scss */
-.icon-time {
-  background-position: -48px -24px;
+/* line 163, partials/bootstrap/_font-awesome.scss */
+.icon-book:before {
+  content: "\f02d";
 }
 
-/* line 58, partials/bootstrap/_sprites.scss */
-.icon-road {
-  background-position: -72px -24px;
+/* line 164, partials/bootstrap/_font-awesome.scss */
+.icon-bookmark:before {
+  content: "\f02e";
 }
 
-/* line 59, partials/bootstrap/_sprites.scss */
-.icon-download-alt {
-  background-position: -96px -24px;
+/* line 165, partials/bootstrap/_font-awesome.scss */
+.icon-print:before {
+  content: "\f02f";
 }
 
-/* line 60, partials/bootstrap/_sprites.scss */
-.icon-download {
-  background-position: -120px -24px;
+/* line 167, partials/bootstrap/_font-awesome.scss */
+.icon-camera:before {
+  content: "\f030";
 }
 
-/* line 61, partials/bootstrap/_sprites.scss */
-.icon-upload {
-  background-position: -144px -24px;
+/* line 168, partials/bootstrap/_font-awesome.scss */
+.icon-font:before {
+  content: "\f031";
 }
 
-/* line 62, partials/bootstrap/_sprites.scss */
-.icon-inbox {
-  background-position: -168px -24px;
+/* line 169, partials/bootstrap/_font-awesome.scss */
+.icon-bold:before {
+  content: "\f032";
 }
 
-/* line 63, partials/bootstrap/_sprites.scss */
-.icon-play-circle {
-  background-position: -192px -24px;
+/* line 170, partials/bootstrap/_font-awesome.scss */
+.icon-italic:before {
+  content: "\f033";
 }
 
-/* line 64, partials/bootstrap/_sprites.scss */
-.icon-repeat {
-  background-position: -216px -24px;
+/* line 171, partials/bootstrap/_font-awesome.scss */
+.icon-text-height:before {
+  content: "\f034";
 }
 
-/* line 65, partials/bootstrap/_sprites.scss */
-.icon-refresh {
-  background-position: -240px -24px;
+/* line 172, partials/bootstrap/_font-awesome.scss */
+.icon-text-width:before {
+  content: "\f035";
 }
 
-/* line 66, partials/bootstrap/_sprites.scss */
-.icon-list-alt {
-  background-position: -264px -24px;
+/* line 173, partials/bootstrap/_font-awesome.scss */
+.icon-align-left:before {
+  content: "\f036";
 }
 
-/* line 67, partials/bootstrap/_sprites.scss */
-.icon-lock {
-  background-position: -287px -24px;
+/* line 174, partials/bootstrap/_font-awesome.scss */
+.icon-align-center:before {
+  content: "\f037";
 }
 
-/* line 68, partials/bootstrap/_sprites.scss */
-.icon-flag {
-  background-position: -312px -24px;
+/* line 175, partials/bootstrap/_font-awesome.scss */
+.icon-align-right:before {
+  content: "\f038";
 }
 
-/* line 69, partials/bootstrap/_sprites.scss */
-.icon-headphones {
-  background-position: -336px -24px;
+/* line 176, partials/bootstrap/_font-awesome.scss */
+.icon-align-justify:before {
+  content: "\f039";
 }
 
-/* line 70, partials/bootstrap/_sprites.scss */
-.icon-volume-off {
-  background-position: -360px -24px;
+/* line 177, partials/bootstrap/_font-awesome.scss */
+.icon-list:before {
+  content: "\f03a";
 }
 
-/* line 71, partials/bootstrap/_sprites.scss */
-.icon-volume-down {
-  background-position: -384px -24px;
+/* line 178, partials/bootstrap/_font-awesome.scss */
+.icon-indent-left:before {
+  content: "\f03b";
 }
 
-/* line 72, partials/bootstrap/_sprites.scss */
-.icon-volume-up {
-  background-position: -408px -24px;
+/* line 179, partials/bootstrap/_font-awesome.scss */
+.icon-indent-right:before {
+  content: "\f03c";
 }
 
-/* line 73, partials/bootstrap/_sprites.scss */
-.icon-qrcode {
-  background-position: -432px -24px;
+/* line 180, partials/bootstrap/_font-awesome.scss */
+.icon-facetime-video:before {
+  content: "\f03d";
 }
 
-/* line 74, partials/bootstrap/_sprites.scss */
-.icon-barcode {
-  background-position: -456px -24px;
+/* line 181, partials/bootstrap/_font-awesome.scss */
+.icon-picture:before {
+  content: "\f03e";
 }
 
-/* line 76, partials/bootstrap/_sprites.scss */
-.icon-tag {
-  background-position: 0 -48px;
+/* line 183, partials/bootstrap/_font-awesome.scss */
+.icon-pencil:before {
+  content: "\f040";
 }
 
-/* line 77, partials/bootstrap/_sprites.scss */
-.icon-tags {
-  background-position: -25px -48px;
+/* line 184, partials/bootstrap/_font-awesome.scss */
+.icon-map-marker:before {
+  content: "\f041";
 }
 
-/* line 78, partials/bootstrap/_sprites.scss */
-.icon-book {
-  background-position: -48px -48px;
+/* line 185, partials/bootstrap/_font-awesome.scss */
+.icon-adjust:before {
+  content: "\f042";
 }
 
-/* line 79, partials/bootstrap/_sprites.scss */
-.icon-bookmark {
-  background-position: -72px -48px;
+/* line 186, partials/bootstrap/_font-awesome.scss */
+.icon-tint:before {
+  content: "\f043";
 }
 
-/* line 80, partials/bootstrap/_sprites.scss */
-.icon-print {
-  background-position: -96px -48px;
+/* line 187, partials/bootstrap/_font-awesome.scss */
+.icon-edit:before {
+  content: "\f044";
 }
 
-/* line 81, partials/bootstrap/_sprites.scss */
-.icon-camera {
-  background-position: -120px -48px;
+/* line 188, partials/bootstrap/_font-awesome.scss */
+.icon-share:before {
+  content: "\f045";
 }
 
-/* line 82, partials/bootstrap/_sprites.scss */
-.icon-font {
-  background-position: -144px -48px;
+/* line 189, partials/bootstrap/_font-awesome.scss */
+.icon-check:before {
+  content: "\f046";
 }
 
-/* line 83, partials/bootstrap/_sprites.scss */
-.icon-bold {
-  background-position: -167px -48px;
+/* line 190, partials/bootstrap/_font-awesome.scss */
+.icon-move:before {
+  content: "\f047";
 }
 
-/* line 84, partials/bootstrap/_sprites.scss */
-.icon-italic {
-  background-position: -192px -48px;
+/* line 191, partials/bootstrap/_font-awesome.scss */
+.icon-step-backward:before {
+  content: "\f048";
 }
 
-/* line 85, partials/bootstrap/_sprites.scss */
-.icon-text-height {
-  background-position: -216px -48px;
+/* line 192, partials/bootstrap/_font-awesome.scss */
+.icon-fast-backward:before {
+  content: "\f049";
 }
 
-/* line 86, partials/bootstrap/_sprites.scss */
-.icon-text-width {
-  background-position: -240px -48px;
+/* line 193, partials/bootstrap/_font-awesome.scss */
+.icon-backward:before {
+  content: "\f04a";
 }
 
-/* line 87, partials/bootstrap/_sprites.scss */
-.icon-align-left {
-  background-position: -264px -48px;
+/* line 194, partials/bootstrap/_font-awesome.scss */
+.icon-play:before {
+  content: "\f04b";
 }
 
-/* line 88, partials/bootstrap/_sprites.scss */
-.icon-align-center {
-  background-position: -288px -48px;
+/* line 195, partials/bootstrap/_font-awesome.scss */
+.icon-pause:before {
+  content: "\f04c";
 }
 
-/* line 89, partials/bootstrap/_sprites.scss */
-.icon-align-right {
-  background-position: -312px -48px;
+/* line 196, partials/bootstrap/_font-awesome.scss */
+.icon-stop:before {
+  content: "\f04d";
 }
 
-/* line 90, partials/bootstrap/_sprites.scss */
-.icon-align-justify {
-  background-position: -336px -48px;
+/* line 197, partials/bootstrap/_font-awesome.scss */
+.icon-forward:before {
+  content: "\f04e";
 }
 
-/* line 91, partials/bootstrap/_sprites.scss */
-.icon-list {
-  background-position: -360px -48px;
+/* line 199, partials/bootstrap/_font-awesome.scss */
+.icon-fast-forward:before {
+  content: "\f050";
 }
 
-/* line 92, partials/bootstrap/_sprites.scss */
-.icon-indent-left {
-  background-position: -384px -48px;
+/* line 200, partials/bootstrap/_font-awesome.scss */
+.icon-step-forward:before {
+  content: "\f051";
 }
 
-/* line 93, partials/bootstrap/_sprites.scss */
-.icon-indent-right {
-  background-position: -408px -48px;
+/* line 201, partials/bootstrap/_font-awesome.scss */
+.icon-eject:before {
+  content: "\f052";
 }
 
-/* line 94, partials/bootstrap/_sprites.scss */
-.icon-facetime-video {
-  background-position: -432px -48px;
+/* line 202, partials/bootstrap/_font-awesome.scss */
+.icon-chevron-left:before {
+  content: "\f053";
 }
 
-/* line 95, partials/bootstrap/_sprites.scss */
-.icon-picture {
-  background-position: -456px -48px;
+/* line 203, partials/bootstrap/_font-awesome.scss */
+.icon-chevron-right:before {
+  content: "\f054";
 }
 
-/* line 97, partials/bootstrap/_sprites.scss */
-.icon-pencil {
-  background-position: 0 -72px;
+/* line 204, partials/bootstrap/_font-awesome.scss */
+.icon-plus-sign:before {
+  content: "\f055";
 }
 
-/* line 98, partials/bootstrap/_sprites.scss */
-.icon-map-marker {
-  background-position: -24px -72px;
+/* line 205, partials/bootstrap/_font-awesome.scss */
+.icon-minus-sign:before {
+  content: "\f056";
 }
 
-/* line 99, partials/bootstrap/_sprites.scss */
-.icon-adjust {
-  background-position: -48px -72px;
+/* line 206, partials/bootstrap/_font-awesome.scss */
+.icon-remove-sign:before {
+  content: "\f057";
 }
 
-/* line 100, partials/bootstrap/_sprites.scss */
-.icon-tint {
-  background-position: -72px -72px;
+/* line 207, partials/bootstrap/_font-awesome.scss */
+.icon-ok-sign:before {
+  content: "\f058";
 }
 
-/* line 101, partials/bootstrap/_sprites.scss */
-.icon-edit {
-  background-position: -96px -72px;
+/* line 208, partials/bootstrap/_font-awesome.scss */
+.icon-question-sign:before {
+  content: "\f059";
 }
 
-/* line 102, partials/bootstrap/_sprites.scss */
-.icon-share {
-  background-position: -120px -72px;
+/* line 209, partials/bootstrap/_font-awesome.scss */
+.icon-info-sign:before {
+  content: "\f05a";
 }
 
-/* line 103, partials/bootstrap/_sprites.scss */
-.icon-check {
-  background-position: -144px -72px;
+/* line 210, partials/bootstrap/_font-awesome.scss */
+.icon-screenshot:before {
+  content: "\f05b";
 }
 
-/* line 104, partials/bootstrap/_sprites.scss */
-.icon-move {
-  background-position: -168px -72px;
+/* line 211, partials/bootstrap/_font-awesome.scss */
+.icon-remove-circle:before {
+  content: "\f05c";
 }
 
-/* line 105, partials/bootstrap/_sprites.scss */
-.icon-step-backward {
-  background-position: -192px -72px;
+/* line 212, partials/bootstrap/_font-awesome.scss */
+.icon-ok-circle:before {
+  content: "\f05d";
 }
 
-/* line 106, partials/bootstrap/_sprites.scss */
-.icon-fast-backward {
-  background-position: -216px -72px;
+/* line 213, partials/bootstrap/_font-awesome.scss */
+.icon-ban-circle:before {
+  content: "\f05e";
 }
 
-/* line 107, partials/bootstrap/_sprites.scss */
-.icon-backward {
-  background-position: -240px -72px;
+/* line 215, partials/bootstrap/_font-awesome.scss */
+.icon-arrow-left:before {
+  content: "\f060";
 }
 
-/* line 108, partials/bootstrap/_sprites.scss */
-.icon-play {
-  background-position: -264px -72px;
+/* line 216, partials/bootstrap/_font-awesome.scss */
+.icon-arrow-right:before {
+  content: "\f061";
 }
 
-/* line 109, partials/bootstrap/_sprites.scss */
-.icon-pause {
-  background-position: -288px -72px;
+/* line 217, partials/bootstrap/_font-awesome.scss */
+.icon-arrow-up:before {
+  content: "\f062";
 }
 
-/* line 110, partials/bootstrap/_sprites.scss */
-.icon-stop {
-  background-position: -312px -72px;
+/* line 218, partials/bootstrap/_font-awesome.scss */
+.icon-arrow-down:before {
+  content: "\f063";
 }
 
-/* line 111, partials/bootstrap/_sprites.scss */
-.icon-forward {
-  background-position: -336px -72px;
+/* line 219, partials/bootstrap/_font-awesome.scss */
+.icon-share-alt:before {
+  content: "\f064";
 }
 
-/* line 112, partials/bootstrap/_sprites.scss */
-.icon-fast-forward {
-  background-position: -360px -72px;
+/* line 220, partials/bootstrap/_font-awesome.scss */
+.icon-resize-full:before {
+  content: "\f065";
 }
 
-/* line 113, partials/bootstrap/_sprites.scss */
-.icon-step-forward {
-  background-position: -384px -72px;
+/* line 221, partials/bootstrap/_font-awesome.scss */
+.icon-resize-small:before {
+  content: "\f066";
 }
 
-/* line 114, partials/bootstrap/_sprites.scss */
-.icon-eject {
-  background-position: -408px -72px;
+/* line 222, partials/bootstrap/_font-awesome.scss */
+.icon-plus:before {
+  content: "\f067";
 }
 
-/* line 115, partials/bootstrap/_sprites.scss */
-.icon-chevron-left {
-  background-position: -432px -72px;
+/* line 223, partials/bootstrap/_font-awesome.scss */
+.icon-minus:before {
+  content: "\f068";
 }
 
-/* line 116, partials/bootstrap/_sprites.scss */
-.icon-chevron-right {
-  background-position: -456px -72px;
+/* line 224, partials/bootstrap/_font-awesome.scss */
+.icon-asterisk:before {
+  content: "\f069";
 }
 
-/* line 118, partials/bootstrap/_sprites.scss */
-.icon-plus-sign {
-  background-position: 0 -96px;
+/* line 225, partials/bootstrap/_font-awesome.scss */
+.icon-exclamation-sign:before {
+  content: "\f06a";
 }
 
-/* line 119, partials/bootstrap/_sprites.scss */
-.icon-minus-sign {
-  background-position: -24px -96px;
+/* line 226, partials/bootstrap/_font-awesome.scss */
+.icon-gift:before {
+  content: "\f06b";
 }
 
-/* line 120, partials/bootstrap/_sprites.scss */
-.icon-remove-sign {
-  background-position: -48px -96px;
+/* line 227, partials/bootstrap/_font-awesome.scss */
+.icon-leaf:before {
+  content: "\f06c";
 }
 
-/* line 121, partials/bootstrap/_sprites.scss */
-.icon-ok-sign {
-  background-position: -72px -96px;
+/* line 228, partials/bootstrap/_font-awesome.scss */
+.icon-fire:before {
+  content: "\f06d";
 }
 
-/* line 122, partials/bootstrap/_sprites.scss */
-.icon-question-sign {
-  background-position: -96px -96px;
+/* line 229, partials/bootstrap/_font-awesome.scss */
+.icon-eye-open:before {
+  content: "\f06e";
 }
 
-/* line 123, partials/bootstrap/_sprites.scss */
-.icon-info-sign {
-  background-position: -120px -96px;
+/* line 231, partials/bootstrap/_font-awesome.scss */
+.icon-eye-close:before {
+  content: "\f070";
 }
 
-/* line 124, partials/bootstrap/_sprites.scss */
-.icon-screenshot {
-  background-position: -144px -96px;
+/* line 232, partials/bootstrap/_font-awesome.scss */
+.icon-warning-sign:before {
+  content: "\f071";
 }
 
-/* line 125, partials/bootstrap/_sprites.scss */
-.icon-remove-circle {
-  background-position: -168px -96px;
+/* line 233, partials/bootstrap/_font-awesome.scss */
+.icon-plane:before {
+  content: "\f072";
 }
 
-/* line 126, partials/bootstrap/_sprites.scss */
-.icon-ok-circle {
-  background-position: -192px -96px;
+/* line 234, partials/bootstrap/_font-awesome.scss */
+.icon-calendar:before {
+  content: "\f073";
 }
 
-/* line 127, partials/bootstrap/_sprites.scss */
-.icon-ban-circle {
-  background-position: -216px -96px;
+/* line 235, partials/bootstrap/_font-awesome.scss */
+.icon-random:before {
+  content: "\f074";
 }
 
-/* line 128, partials/bootstrap/_sprites.scss */
-.icon-arrow-left {
-  background-position: -240px -96px;
+/* line 236, partials/bootstrap/_font-awesome.scss */
+.icon-comment:before {
+  content: "\f075";
 }
 
-/* line 129, partials/bootstrap/_sprites.scss */
-.icon-arrow-right {
-  background-position: -264px -96px;
+/* line 237, partials/bootstrap/_font-awesome.scss */
+.icon-magnet:before {
+  content: "\f076";
 }
 
-/* line 130, partials/bootstrap/_sprites.scss */
-.icon-arrow-up {
-  background-position: -289px -96px;
+/* line 238, partials/bootstrap/_font-awesome.scss */
+.icon-chevron-up:before {
+  content: "\f077";
 }
 
-/* line 131, partials/bootstrap/_sprites.scss */
-.icon-arrow-down {
-  background-position: -312px -96px;
+/* line 239, partials/bootstrap/_font-awesome.scss */
+.icon-chevron-down:before {
+  content: "\f078";
 }
 
-/* line 132, partials/bootstrap/_sprites.scss */
-.icon-share-alt {
-  background-position: -336px -96px;
+/* line 240, partials/bootstrap/_font-awesome.scss */
+.icon-retweet:before {
+  content: "\f079";
 }
 
-/* line 133, partials/bootstrap/_sprites.scss */
-.icon-resize-full {
-  background-position: -360px -96px;
+/* line 241, partials/bootstrap/_font-awesome.scss */
+.icon-shopping-cart:before {
+  content: "\f07a";
 }
 
-/* line 134, partials/bootstrap/_sprites.scss */
-.icon-resize-small {
-  background-position: -384px -96px;
+/* line 242, partials/bootstrap/_font-awesome.scss */
+.icon-folder-close:before {
+  content: "\f07b";
 }
 
-/* line 135, partials/bootstrap/_sprites.scss */
-.icon-plus {
-  background-position: -408px -96px;
+/* line 243, partials/bootstrap/_font-awesome.scss */
+.icon-folder-open:before {
+  content: "\f07c";
 }
 
-/* line 136, partials/bootstrap/_sprites.scss */
-.icon-minus {
-  background-position: -433px -96px;
+/* line 244, partials/bootstrap/_font-awesome.scss */
+.icon-resize-vertical:before {
+  content: "\f07d";
 }
 
-/* line 137, partials/bootstrap/_sprites.scss */
-.icon-asterisk {
-  background-position: -456px -96px;
+/* line 245, partials/bootstrap/_font-awesome.scss */
+.icon-resize-horizontal:before {
+  content: "\f07e";
 }
 
-/* line 139, partials/bootstrap/_sprites.scss */
-.icon-exclamation-sign {
-  background-position: 0 -120px;
+/* line 247, partials/bootstrap/_font-awesome.scss */
+.icon-bar-chart:before {
+  content: "\f080";
 }
 
-/* line 140, partials/bootstrap/_sprites.scss */
-.icon-gift {
-  background-position: -24px -120px;
+/* line 248, partials/bootstrap/_font-awesome.scss */
+.icon-twitter-sign:before {
+  content: "\f081";
 }
 
-/* line 141, partials/bootstrap/_sprites.scss */
-.icon-leaf {
-  background-position: -48px -120px;
+/* line 249, partials/bootstrap/_font-awesome.scss */
+.icon-facebook-sign:before {
+  content: "\f082";
 }
 
-/* line 142, partials/bootstrap/_sprites.scss */
-.icon-fire {
-  background-position: -72px -120px;
+/* line 250, partials/bootstrap/_font-awesome.scss */
+.icon-camera-retro:before {
+  content: "\f083";
 }
 
-/* line 143, partials/bootstrap/_sprites.scss */
-.icon-eye-open {
-  background-position: -96px -120px;
+/* line 251, partials/bootstrap/_font-awesome.scss */
+.icon-key:before {
+  content: "\f084";
 }
 
-/* line 144, partials/bootstrap/_sprites.scss */
-.icon-eye-close {
-  background-position: -120px -120px;
+/* line 252, partials/bootstrap/_font-awesome.scss */
+.icon-cogs:before {
+  content: "\f085";
 }
 
-/* line 145, partials/bootstrap/_sprites.scss */
-.icon-warning-sign {
-  background-position: -144px -120px;
+/* line 253, partials/bootstrap/_font-awesome.scss */
+.icon-comments:before {
+  content: "\f086";
 }
 
-/* line 146, partials/bootstrap/_sprites.scss */
-.icon-plane {
-  background-position: -168px -120px;
+/* line 254, partials/bootstrap/_font-awesome.scss */
+.icon-thumbs-up:before {
+  content: "\f087";
 }
 
-/* line 147, partials/bootstrap/_sprites.scss */
-.icon-calendar {
-  background-position: -192px -120px;
+/* line 255, partials/bootstrap/_font-awesome.scss */
+.icon-thumbs-down:before {
+  content: "\f088";
 }
 
-/* line 148, partials/bootstrap/_sprites.scss */
-.icon-random {
-  background-position: -216px -120px;
+/* line 256, partials/bootstrap/_font-awesome.scss */
+.icon-star-half:before {
+  content: "\f089";
 }
 
-/* line 149, partials/bootstrap/_sprites.scss */
-.icon-comment {
-  background-position: -240px -120px;
+/* line 257, partials/bootstrap/_font-awesome.scss */
+.icon-heart-empty:before {
+  content: "\f08a";
 }
 
-/* line 150, partials/bootstrap/_sprites.scss */
-.icon-magnet {
-  background-position: -264px -120px;
+/* line 258, partials/bootstrap/_font-awesome.scss */
+.icon-signout:before {
+  content: "\f08b";
 }
 
-/* line 151, partials/bootstrap/_sprites.scss */
-.icon-chevron-up {
-  background-position: -288px -120px;
+/* line 259, partials/bootstrap/_font-awesome.scss */
+.icon-linkedin-sign:before {
+  content: "\f08c";
 }
 
-/* line 152, partials/bootstrap/_sprites.scss */
-.icon-chevron-down {
-  background-position: -313px -119px;
+/* line 260, partials/bootstrap/_font-awesome.scss */
+.icon-pushpin:before {
+  content: "\f08d";
 }
 
-/* line 153, partials/bootstrap/_sprites.scss */
-.icon-retweet {
-  background-position: -336px -120px;
+/* line 261, partials/bootstrap/_font-awesome.scss */
+.icon-external-link:before {
+  content: "\f08e";
 }
 
-/* line 154, partials/bootstrap/_sprites.scss */
-.icon-shopping-cart {
-  background-position: -360px -120px;
+/* line 263, partials/bootstrap/_font-awesome.scss */
+.icon-signin:before {
+  content: "\f090";
 }
 
-/* line 155, partials/bootstrap/_sprites.scss */
-.icon-folder-close {
-  background-position: -384px -120px;
+/* line 264, partials/bootstrap/_font-awesome.scss */
+.icon-trophy:before {
+  content: "\f091";
 }
 
-/* line 156, partials/bootstrap/_sprites.scss */
-.icon-folder-open {
-  background-position: -408px -120px;
+/* line 265, partials/bootstrap/_font-awesome.scss */
+.icon-github-sign:before {
+  content: "\f092";
 }
 
-/* line 157, partials/bootstrap/_sprites.scss */
-.icon-resize-vertical {
-  background-position: -432px -119px;
+/* line 266, partials/bootstrap/_font-awesome.scss */
+.icon-upload-alt:before {
+  content: "\f093";
 }
 
-/* line 158, partials/bootstrap/_sprites.scss */
-.icon-resize-horizontal {
-  background-position: -456px -118px;
+/* line 267, partials/bootstrap/_font-awesome.scss */
+.icon-lemon:before {
+  content: "\f094";
 }
 
 /* line 5, partials/bootstrap/_dropdowns.scss */
