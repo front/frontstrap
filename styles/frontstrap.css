@@ -5007,7 +5007,99 @@ li a.active {
 }
 
 /* Typography */
-/* Links */
+/* Nav */
+/* line 113, frontstrap.scss */
+#main-menu {
+  width: 100%;
+  height: 36px;
+  background-color: #eeeeee;
+  /* Old browsers */
+  background-repeat: repeat-x;
+  /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+  /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+  /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+  /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+  /* IE10+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+  /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+  /* W3C */
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+/* line 131, frontstrap.scss */
+#main-menu ul.main-menu {
+  margin-bottom: 0;
+}
+
+/* line 134, frontstrap.scss */
+#main-menu ul.main-menu > li > a {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 145, frontstrap.scss */
+#main-menu ul.main-menu > .active > a,
+#main-menu ul.main-menu > .active > a:hover {
+  padding-left: 13px;
+  color: #777;
+  background-color: #e9e9e9;
+  border-right-color: #ddd;
+  border-left: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* line 156, frontstrap.scss */
+#main-menu ul.main-menu > .active > a .caret,
+#main-menu ul.main-menu > .active > a:hover .caret {
+  border-top-color: #777;
+}
+
+/* line 160, frontstrap.scss */
+#main-menu ul.main-menu > li:first-child > a,
+#main-menu ul.main-menu > li:first-child > a:hover {
+  border-left: 0;
+  padding-left: 12px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+/* line 167, frontstrap.scss */
+#main-menu ul.main-menu > li:last-child > a {
+  border-right: 0;
+}
+
+/* line 170, frontstrap.scss */
+#main-menu .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 176, frontstrap.scss */
+ul.main-menu {
+  padding: 0;
+}
+
 /* header */
 /* Sidebars */
 /* Footer */
@@ -5017,26 +5109,26 @@ li a.active {
  *************************************************/
 /*         Forms
  *************************************************/
-/* line 128, frontstrap.scss */
+/* line 196, frontstrap.scss */
 html.js input.form-autocomplete {
   background-position: 100% 7px;
 }
 
-/* line 133, frontstrap.scss */
+/* line 201, frontstrap.scss */
 .node-form label {
   font-weight: bold;
 }
-/* line 136, frontstrap.scss */
+/* line 204, frontstrap.scss */
 .node-form input.form-text {
   width: 98%;
 }
-/* line 139, frontstrap.scss */
+/* line 207, frontstrap.scss */
 .node-form .image-preview {
   padding: 7px;
   border: 1px solid #ccc;
   margin-right: 20px;
 }
-/* line 144, frontstrap.scss */
+/* line 212, frontstrap.scss */
 .node-form .vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box;
   /* prevet from collapsing in FF*/
