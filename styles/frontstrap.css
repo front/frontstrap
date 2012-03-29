@@ -19,6 +19,8 @@
  *  4. Forms
  * 
  */
+/*         Compass
+ *************************************************/
 /*         General Sitewide Styles
  *************************************************/
 /* line 17, partials/bootstrap/_reset.scss */
@@ -1665,8 +1667,8 @@ table .span12 {
     */
 @font-face {
   font-family: "FontAwesome";
-  src: url('fonts/../../../font/fontawesome-webfont.eot');
-  src: url('fonts/../../../font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../../../font/fontawesome-webfont.woff') format('woff'), url('fonts/../../../font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../../../font/fontawesome-webfont.otf') format('opentype'), url('fonts/../../../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('fonts/../../../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  src: url('fonts/../font/fontawesome-webfont.eot');
+  src: url('fonts/../font/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/../font/fontawesome-webfont.woff') format('woff'), url('fonts/../font/fontawesome-webfont.ttf') format('truetype'), url('fonts/../font/fontawesome-webfont.otf') format('opentype'), url('fonts/../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('fonts/../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -4972,34 +4974,34 @@ a.thumbnail:hover {
 }
 
 /* Hide! */
-/* line 79, frontstrap.scss */
+/* line 85, frontstrap.scss */
 .filter-guidelines-item, .filter-help {
   display: none !important;
 }
 
 /* Layout */
 /* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
-/* line 86, frontstrap.scss */
+/* line 92, frontstrap.scss */
 div.tabs {
   margin-top: 20px;
 }
 
-/* line 90, frontstrap.scss */
+/* line 96, frontstrap.scss */
 li a.active {
   color: #0088CC;
 }
 
-/* line 93, frontstrap.scss */
+/* line 99, frontstrap.scss */
 .submitted {
   color: #999;
 }
 
-/* line 96, frontstrap.scss */
+/* line 102, frontstrap.scss */
 .field-type-image {
   margin: 0 0 20px 0;
 }
 
-/* line 99, frontstrap.scss */
+/* line 105, frontstrap.scss */
 .field-name-body {
   margin: 20px 0;
 }
@@ -5015,26 +5017,26 @@ li a.active {
  *************************************************/
 /*         Forms
  *************************************************/
-/* line 122, frontstrap.scss */
+/* line 128, frontstrap.scss */
 html.js input.form-autocomplete {
   background-position: 100% 7px;
 }
 
-/* line 127, frontstrap.scss */
+/* line 133, frontstrap.scss */
 .node-form label {
   font-weight: bold;
 }
-/* line 130, frontstrap.scss */
+/* line 136, frontstrap.scss */
 .node-form input.form-text {
   width: 98%;
 }
-/* line 133, frontstrap.scss */
+/* line 139, frontstrap.scss */
 .node-form .image-preview {
   padding: 7px;
   border: 1px solid #ccc;
   margin-right: 20px;
 }
-/* line 138, frontstrap.scss */
+/* line 144, frontstrap.scss */
 .node-form .vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box;
   /* prevet from collapsing in FF*/
