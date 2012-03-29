@@ -1,8 +1,8 @@
-/* 
+/*
  * ##### Sasson - advanced drupal theming. #####
- *   
+ *
  * SITENAME theme main stylesheet.
- * 
+ *
  *  Index
  *  -----------
  *  1. General Sitewide Styles
@@ -10,14 +10,14 @@
  *    -- Layout
  *    -- General Styles
  *    -- Typography
- *    -- Links 
+ *    -- Links
  *    -- Header
  *    -- Sidebars
  *    -- Footer
  *  2. Front Page
  *  3. Inner Pages
  *  4. Forms
- * 
+ *
  */
 
 /*         Compass
@@ -47,7 +47,7 @@
 @import 'partials/bootstrap/_forms.scss';
 @import 'partials/bootstrap/_tables.scss';
 
-// Components: common
+// Components: Common
 @import 'partials/bootstrap/_font-awesome.scss';
 @import 'partials/bootstrap/_dropdowns.scss';
 @import 'partials/bootstrap/_wells.scss';
@@ -214,4 +214,3 @@ background-position: 100% 7px;
     width: 100%;
   }
 }
-

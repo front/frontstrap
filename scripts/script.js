@@ -6,7 +6,7 @@
  */
 
 (function($) {
-  
+
 // DUPLICATE AND UNCOMMENT
 //Drupal.behaviors.behaviorName = {
 //  attach: function(context) {

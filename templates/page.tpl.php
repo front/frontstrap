@@ -70,7 +70,7 @@
 ?>
 
 <div id="page">
-  
+
   <?php if ($logo || $site_name || $site_slogan || $page['header']): ?>
     <header id="header" role="banner">
       <?php if ($logo): ?>
@@ -92,7 +92,7 @@
       <?php print render($page['header']); ?>
     </header><!-- /#header -->
   <?php endif; ?>
-  
+
   <?php if ($main_menu_links): ?>
     <nav id="main-menu" role="navigation">
       <?php print $main_menu_links; ?>
@@ -117,12 +117,12 @@
         <?php print render($page['highlighted']); ?>
       </div><!-- /#highlighted -->
     <?php endif; ?>
-     
+
     <?php if (!empty($breadcrumb)): ?>
-	  <div class="breadcrumb">
-	    <?php print $breadcrumb; ?>
-	  </div><!-- .breadcrumb -->
-	<?php endif; ?>
+    <div class="breadcrumb">
+      <?php print $breadcrumb; ?>
+    </div><!-- .breadcrumb -->
+  <?php endif; ?>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h1 class="title" id="page-title"><?php print $title; ?></h1>
