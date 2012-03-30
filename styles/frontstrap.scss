@@ -81,16 +81,46 @@
 // Utility classes
 @import 'partials/bootstrap/_utilities.scss'; // Has to be last to override when necessary
 
-  /* Hide! */
-.filter-guidelines-item, .filter-help {
+
+/* Hide! */
+.filter-guidelines-item,
+.filter-help {
   display: none !important;
 }
-  /* Layout */
 
-  /* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE*/
+/* Layout */
+
+/* General Styles (Colors, Backgrounds etc.) TODO: PLACE ELSEWHERE */
 
 div.tabs {
-  margin-top: 20px;
+}
+
+.tabs {
+  ul.tabs {
+    margin: 0 0 $baseLineHeight;
+    line-height: $baseLineHeight;
+    white-space: normal;
+
+    li {
+      display: list-item;
+    }
+    a {
+      line-height: $baseLineHeight;
+      display: block;
+      border-bottom: none;
+    }
+  }
+  .secondary {
+    &,
+    li {
+      padding: 0;
+      border: none;
+      list-style: none;
+    }
+
+    @extend .nav;
+    @extend .nav-pills;
+  }
 }
 
 li a.active {
@@ -106,9 +136,9 @@ li a.active {
   margin: 20px 0;
 }
 
-  /* Typography */
+/* Typography */
 
-  /* Nav */
+/* Nav */
 
 #main-menu {
   width: 100%;
@@ -178,11 +208,13 @@ ul.main-menu {
 }
 
 
-  /* header */
+/* Header */
 
-  /* Sidebars */
 
-  /* Footer */
+/* Sidebars */
+
+
+/* Footer */
 
 
 /*         Front Page
@@ -194,10 +226,10 @@ ul.main-menu {
 /*         Forms
  *************************************************/
 html.js input.form-autocomplete {
-background-position: 100% 7px;
+  background-position: 100% 7px;
 }
 
-.node-form {
+.node-forms {
   label {
     font-weight: bold;
   }
