@@ -4410,18 +4410,18 @@ html.js input.form-autocomplete {
   background-position: 100% 7px;
 }
 
-.node-forms label {
+.node-form label {
   font-weight: bold;
 }
-.node-forms input.form-text {
+.node-form input.form-text {
   width: 98%;
 }
-.node-forms .image-preview {
+.node-form .image-preview {
   padding: 7px;
   border: 1px solid #ccc;
   margin-right: 20px;
 }
-.node-forms .vertical-tabs .form-type-textfield input {
+.node-form .vertical-tabs .form-type-textfield input {
   -moz-box-sizing: content-box;
   /* prevet from collapsing in FF*/
   width: 100%;
