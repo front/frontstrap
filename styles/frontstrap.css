@@ -2755,7 +2755,7 @@ div.warning {
   margin-top: 5px;
 }
 
-.nav, .tabs .secondary, .tabs.primary {
+.nav, .tabs .secondary, #secondary-menu ul, .tabs.primary {
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
@@ -2763,16 +2763,16 @@ div.warning {
   padding-left: 0;
 }
 
-.nav > li > a, .tabs .secondary > li > a {
+.nav > li > a, .tabs .secondary > li > a, #secondary-menu ul > li > a {
   display: block;
 }
 
-.nav > li > a:hover, .tabs .secondary > li > a:hover {
+.nav > li > a:hover, .tabs .secondary > li > a:hover, #secondary-menu ul > li > a:hover {
   text-decoration: none;
   background-color: #eeeeee;
 }
 
-.nav .nav-header, .tabs .secondary .nav-header {
+.nav .nav-header, .tabs .secondary .nav-header, #secondary-menu ul .nav-header {
   display: block;
   padding: 3px 15px;
   font-size: 11px;
@@ -2783,7 +2783,7 @@ div.warning {
   text-transform: uppercase;
 }
 
-.nav li + .nav-header, .tabs .secondary li + .nav-header {
+.nav li + .nav-header, .tabs .secondary li + .nav-header, #secondary-menu ul li + .nav-header {
   margin-top: 9px;
 }
 
@@ -2983,7 +2983,7 @@ div.warning {
   border-top-color: #333333;
 }
 
-.nav > .dropdown.active > a:hover, .tabs .secondary > .dropdown.active > a:hover {
+.nav > .dropdown.active > a:hover, .tabs .secondary > .dropdown.active > a:hover, #secondary-menu ul > .dropdown.active > a:hover {
   color: black;
   cursor: pointer;
 }
@@ -2992,17 +2992,20 @@ div.warning {
 .nav-pills .open .dropdown-toggle,
 .tabs .secondary .open .dropdown-toggle,
 .nav > .open.active > a:hover,
-.tabs .secondary > .open.active > a:hover {
+.tabs .secondary > .open.active > a:hover,
+#secondary-menu ul > .open.active > a:hover {
   color: white;
   background-color: #999999;
   border-color: #999999;
 }
 
-.nav .open .caret, .tabs .secondary .open .caret,
+.nav .open .caret, .tabs .secondary .open .caret, #secondary-menu ul .open .caret,
 .nav .open.active .caret,
 .tabs .secondary .open.active .caret,
+#secondary-menu ul .open.active .caret,
 .nav .open a:hover .caret,
-.tabs .secondary .open a:hover .caret {
+.tabs .secondary .open a:hover .caret,
+#secondary-menu ul .open a:hover .caret {
   border-top-color: white;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -3125,7 +3128,7 @@ div.warning {
   *border-left-color: white;
 }
 
-.navbar {
+.navbar, #secondary-menu {
   overflow: visible;
   margin-bottom: 18px;
 }
@@ -3200,10 +3203,10 @@ div.warning {
   height: auto;
 }
 
-.navbar .brand:hover {
+.navbar .brand:hover, #secondary-menu .brand:hover, .navbar #secondary-menu h2:hover, #secondary-menu .navbar h2:hover, #secondary-menu h2:hover {
   text-decoration: none;
 }
-.navbar .brand {
+.navbar .brand, #secondary-menu .brand, .navbar #secondary-menu h2, #secondary-menu .navbar h2, #secondary-menu h2 {
   float: left;
   display: block;
   padding: 8px 20px 12px;
@@ -3213,20 +3216,21 @@ div.warning {
   line-height: 1;
   color: white;
 }
-.navbar .navbar-text {
+.navbar .navbar-text, #secondary-menu .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
   color: #999999;
 }
-.navbar .navbar-text a:hover {
+.navbar .navbar-text a:hover, #secondary-menu .navbar-text a:hover {
   color: white;
   background-color: transparent;
 }
-.navbar .btn,
-.navbar .btn-group {
+.navbar .btn, #secondary-menu .btn,
+.navbar .btn-group,
+#secondary-menu .btn-group {
   margin-top: 5px;
 }
-.navbar .btn-group .btn {
+.navbar .btn-group .btn, #secondary-menu .btn-group .btn {
   margin-top: 0;
 }
 
@@ -3331,7 +3335,7 @@ div.warning {
   border-radius: 0;
 }
 
-.navbar .nav, .navbar .tabs .secondary, .tabs .navbar .secondary {
+.navbar .nav, #secondary-menu .nav, .navbar .tabs .secondary, .tabs .navbar .secondary, #secondary-menu .tabs .secondary, .tabs #secondary-menu .secondary, .navbar #secondary-menu ul, #secondary-menu .navbar ul, #secondary-menu ul {
   position: relative;
   left: 0;
   display: block;
@@ -3339,16 +3343,16 @@ div.warning {
   margin: 0 10px 0 0;
 }
 
-.navbar .nav.pull-right, .navbar .tabs .pull-right.secondary, .tabs .navbar .pull-right.secondary {
+.navbar .nav.pull-right, #secondary-menu .nav.pull-right, .navbar .tabs .pull-right.secondary, .tabs .navbar .pull-right.secondary, #secondary-menu .tabs .pull-right.secondary, .tabs #secondary-menu .pull-right.secondary, .navbar #secondary-menu ul.pull-right, #secondary-menu .navbar ul.pull-right, #secondary-menu ul.pull-right {
   float: right;
 }
 
-.navbar .nav > li, .navbar .tabs .secondary > li, .tabs .navbar .secondary > li {
+.navbar .nav > li, #secondary-menu .nav > li, .navbar .tabs .secondary > li, .tabs .navbar .secondary > li, #secondary-menu .tabs .secondary > li, .tabs #secondary-menu .secondary > li, .navbar #secondary-menu ul > li, #secondary-menu .navbar ul > li, #secondary-menu ul > li {
   display: block;
   float: left;
 }
 
-.navbar .nav > li > a, .navbar .tabs .secondary > li > a, .tabs .navbar .secondary > li > a {
+.navbar .nav > li > a, #secondary-menu .nav > li > a, .navbar .tabs .secondary > li > a, .tabs .navbar .secondary > li > a, #secondary-menu .tabs .secondary > li > a, .tabs #secondary-menu .secondary > li > a, .navbar #secondary-menu ul > li > a, #secondary-menu .navbar ul > li > a, #secondary-menu ul > li > a {
   float: none;
   padding: 10px 10px 11px;
   line-height: 19px;
@@ -3357,22 +3361,28 @@ div.warning {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.navbar .nav > li > a:hover, .navbar .tabs .secondary > li > a:hover, .tabs .navbar .secondary > li > a:hover {
+.navbar .nav > li > a:hover, #secondary-menu .nav > li > a:hover, .navbar .tabs .secondary > li > a:hover, .tabs .navbar .secondary > li > a:hover, #secondary-menu .tabs .secondary > li > a:hover, .tabs #secondary-menu .secondary > li > a:hover, .navbar #secondary-menu ul > li > a:hover, #secondary-menu .navbar ul > li > a:hover, #secondary-menu ul > li > a:hover {
   background-color: transparent;
   color: white;
   text-decoration: none;
 }
 
-.navbar .nav .active > a, .navbar .tabs .secondary .active > a, .tabs .navbar .secondary .active > a,
+.navbar .nav .active > a, #secondary-menu .nav .active > a, .navbar .tabs .secondary .active > a, .tabs .navbar .secondary .active > a, #secondary-menu .tabs .secondary .active > a, .tabs #secondary-menu .secondary .active > a, .navbar #secondary-menu ul .active > a, #secondary-menu .navbar ul .active > a, #secondary-menu ul .active > a,
 .navbar .nav .active > a:hover,
+#secondary-menu .nav .active > a:hover,
 .navbar .tabs .secondary .active > a:hover,
-.tabs .navbar .secondary .active > a:hover {
+.tabs .navbar .secondary .active > a:hover,
+#secondary-menu .tabs .secondary .active > a:hover,
+.tabs #secondary-menu .secondary .active > a:hover,
+.navbar #secondary-menu ul .active > a:hover,
+#secondary-menu .navbar ul .active > a:hover,
+#secondary-menu ul .active > a:hover {
   color: white;
   text-decoration: none;
   background-color: #222222;
 }
 
-.navbar .divider-vertical {
+.navbar .divider-vertical, #secondary-menu .divider-vertical {
   height: 40px;
   width: 1px;
   margin: 0 9px;
@@ -3381,18 +3391,18 @@ div.warning {
   border-right: 1px solid #333333;
 }
 
-.navbar .nav.pull-right, .navbar .tabs .pull-right.secondary, .tabs .navbar .pull-right.secondary {
+.navbar .nav.pull-right, #secondary-menu .nav.pull-right, .navbar .tabs .pull-right.secondary, .tabs .navbar .pull-right.secondary, #secondary-menu .tabs .pull-right.secondary, .tabs #secondary-menu .pull-right.secondary, .navbar #secondary-menu ul.pull-right, #secondary-menu .navbar ul.pull-right, #secondary-menu ul.pull-right {
   margin-left: 10px;
   margin-right: 0;
 }
 
-.navbar .dropdown-menu {
+.navbar .dropdown-menu, #secondary-menu .dropdown-menu {
   margin-top: 1px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
-.navbar .dropdown-menu:before {
+.navbar .dropdown-menu:before, #secondary-menu .dropdown-menu:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -3403,7 +3413,7 @@ div.warning {
   top: -7px;
   left: 9px;
 }
-.navbar .dropdown-menu:after {
+.navbar .dropdown-menu:after, #secondary-menu .dropdown-menu:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -3414,41 +3424,59 @@ div.warning {
   left: 10px;
 }
 
-.navbar .nav .dropdown-toggle .caret, .navbar .tabs .secondary .dropdown-toggle .caret, .tabs .navbar .secondary .dropdown-toggle .caret,
+.navbar .nav .dropdown-toggle .caret, #secondary-menu .nav .dropdown-toggle .caret, .navbar .tabs .secondary .dropdown-toggle .caret, .tabs .navbar .secondary .dropdown-toggle .caret, #secondary-menu .tabs .secondary .dropdown-toggle .caret, .tabs #secondary-menu .secondary .dropdown-toggle .caret, .navbar #secondary-menu ul .dropdown-toggle .caret, #secondary-menu .navbar ul .dropdown-toggle .caret, #secondary-menu ul .dropdown-toggle .caret,
 .navbar .nav .open.dropdown .caret,
+#secondary-menu .nav .open.dropdown .caret,
 .navbar .tabs .secondary .open.dropdown .caret,
-.tabs .navbar .secondary .open.dropdown .caret {
+.tabs .navbar .secondary .open.dropdown .caret,
+#secondary-menu .tabs .secondary .open.dropdown .caret,
+.tabs #secondary-menu .secondary .open.dropdown .caret,
+.navbar #secondary-menu ul .open.dropdown .caret,
+#secondary-menu .navbar ul .open.dropdown .caret,
+#secondary-menu ul .open.dropdown .caret {
   border-top-color: white;
 }
 
-.navbar .nav .active .caret, .navbar .tabs .secondary .active .caret, .tabs .navbar .secondary .active .caret {
+.navbar .nav .active .caret, #secondary-menu .nav .active .caret, .navbar .tabs .secondary .active .caret, .tabs .navbar .secondary .active .caret, #secondary-menu .tabs .secondary .active .caret, .tabs #secondary-menu .secondary .active .caret, .navbar #secondary-menu ul .active .caret, #secondary-menu .navbar ul .active .caret, #secondary-menu ul .active .caret {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-.navbar .nav .open > .dropdown-toggle, .navbar .tabs .secondary .open > .dropdown-toggle, .tabs .navbar .secondary .open > .dropdown-toggle,
+.navbar .nav .open > .dropdown-toggle, #secondary-menu .nav .open > .dropdown-toggle, .navbar .tabs .secondary .open > .dropdown-toggle, .tabs .navbar .secondary .open > .dropdown-toggle, #secondary-menu .tabs .secondary .open > .dropdown-toggle, .tabs #secondary-menu .secondary .open > .dropdown-toggle, .navbar #secondary-menu ul .open > .dropdown-toggle, #secondary-menu .navbar ul .open > .dropdown-toggle, #secondary-menu ul .open > .dropdown-toggle,
 .navbar .nav .active > .dropdown-toggle,
+#secondary-menu .nav .active > .dropdown-toggle,
 .navbar .tabs .secondary .active > .dropdown-toggle,
 .tabs .navbar .secondary .active > .dropdown-toggle,
+#secondary-menu .tabs .secondary .active > .dropdown-toggle,
+.tabs #secondary-menu .secondary .active > .dropdown-toggle,
+.navbar #secondary-menu ul .active > .dropdown-toggle,
+#secondary-menu .navbar ul .active > .dropdown-toggle,
+#secondary-menu ul .active > .dropdown-toggle,
 .navbar .nav .open.active > .dropdown-toggle,
+#secondary-menu .nav .open.active > .dropdown-toggle,
 .navbar .tabs .secondary .open.active > .dropdown-toggle,
-.tabs .navbar .secondary .open.active > .dropdown-toggle {
+.tabs .navbar .secondary .open.active > .dropdown-toggle,
+#secondary-menu .tabs .secondary .open.active > .dropdown-toggle,
+.tabs #secondary-menu .secondary .open.active > .dropdown-toggle,
+.navbar #secondary-menu ul .open.active > .dropdown-toggle,
+#secondary-menu .navbar ul .open.active > .dropdown-toggle,
+#secondary-menu ul .open.active > .dropdown-toggle {
   background-color: transparent;
 }
 
-.navbar .nav .active > .dropdown-toggle:hover, .navbar .tabs .secondary .active > .dropdown-toggle:hover, .tabs .navbar .secondary .active > .dropdown-toggle:hover {
+.navbar .nav .active > .dropdown-toggle:hover, #secondary-menu .nav .active > .dropdown-toggle:hover, .navbar .tabs .secondary .active > .dropdown-toggle:hover, .tabs .navbar .secondary .active > .dropdown-toggle:hover, #secondary-menu .tabs .secondary .active > .dropdown-toggle:hover, .tabs #secondary-menu .secondary .active > .dropdown-toggle:hover, .navbar #secondary-menu ul .active > .dropdown-toggle:hover, #secondary-menu .navbar ul .active > .dropdown-toggle:hover, #secondary-menu ul .active > .dropdown-toggle:hover {
   color: white;
 }
 
-.navbar .nav.pull-right .dropdown-menu, .navbar .tabs .pull-right.secondary .dropdown-menu, .tabs .navbar .pull-right.secondary .dropdown-menu {
+.navbar .nav.pull-right .dropdown-menu, #secondary-menu .nav.pull-right .dropdown-menu, .navbar .tabs .pull-right.secondary .dropdown-menu, .tabs .navbar .pull-right.secondary .dropdown-menu, #secondary-menu .tabs .pull-right.secondary .dropdown-menu, .tabs #secondary-menu .pull-right.secondary .dropdown-menu, .navbar #secondary-menu ul.pull-right .dropdown-menu, #secondary-menu .navbar ul.pull-right .dropdown-menu, #secondary-menu ul.pull-right .dropdown-menu {
   left: auto;
   right: 0;
 }
-.navbar .nav.pull-right .dropdown-menu:before, .navbar .tabs .pull-right.secondary .dropdown-menu:before, .tabs .navbar .pull-right.secondary .dropdown-menu:before {
+.navbar .nav.pull-right .dropdown-menu:before, #secondary-menu .nav.pull-right .dropdown-menu:before, .navbar .tabs .pull-right.secondary .dropdown-menu:before, .tabs .navbar .pull-right.secondary .dropdown-menu:before, #secondary-menu .tabs .pull-right.secondary .dropdown-menu:before, .tabs #secondary-menu .pull-right.secondary .dropdown-menu:before, .navbar #secondary-menu ul.pull-right .dropdown-menu:before, #secondary-menu .navbar ul.pull-right .dropdown-menu:before, #secondary-menu ul.pull-right .dropdown-menu:before {
   left: auto;
   right: 12px;
 }
-.navbar .nav.pull-right .dropdown-menu:after, .navbar .tabs .pull-right.secondary .dropdown-menu:after, .tabs .navbar .pull-right.secondary .dropdown-menu:after {
+.navbar .nav.pull-right .dropdown-menu:after, #secondary-menu .nav.pull-right .dropdown-menu:after, .navbar .tabs .pull-right.secondary .dropdown-menu:after, .tabs .navbar .pull-right.secondary .dropdown-menu:after, #secondary-menu .tabs .pull-right.secondary .dropdown-menu:after, .tabs #secondary-menu .pull-right.secondary .dropdown-menu:after, .navbar #secondary-menu ul.pull-right .dropdown-menu:after, #secondary-menu .navbar ul.pull-right .dropdown-menu:after, #secondary-menu ul.pull-right .dropdown-menu:after {
   left: auto;
   right: 13px;
 }
@@ -4394,6 +4422,20 @@ li a.active {
 }
 
 ul.main-menu {
+  padding: 0;
+}
+
+#secondary-menu .navbar-inner {
+  *zoom: 1;
+}
+#secondary-menu .navbar-inner:before, #secondary-menu .navbar-inner:after {
+  display: table;
+  content: "";
+}
+#secondary-menu .navbar-inner:after {
+  clear: both;
+}
+#secondary-menu li {
   padding: 0;
 }
 

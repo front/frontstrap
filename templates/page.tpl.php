@@ -101,7 +101,10 @@
 
   <?php if ($secondary_menu_links): ?>
     <nav id="secondary-menu" role="navigation">
-      <?php print $secondary_menu_links ?>
+      <div class="navbar-inner">
+        <h2><?php print t('Secondary Menu'); // TODO use original hidden title ?></h2>
+        <?php print $secondary_menu_links ?>
+      </div>
     </nav> <!-- /#secondary-menu -->
   <?php endif; ?>
 
