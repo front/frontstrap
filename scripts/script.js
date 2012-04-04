@@ -1,7 +1,7 @@
 /*
  * ##### Sasson - advanced drupal theming. #####
  *
- * SITENAME scripts.
+ * Frontstrap scripts.
  *
  */
 

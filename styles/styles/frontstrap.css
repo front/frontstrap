@@ -271,46 +271,46 @@ a:hover {
 }
 .row-fluid > [class*="span"] {
   float: left;
-  margin-left: 2.128%;
+  margin-left: 2%;
 }
 .row-fluid > [class*="span"]:first-child {
   margin-left: 0;
 }
 .row-fluid > .span1 {
-  width: 6.383%;
+  width: 6%;
 }
 .row-fluid > .span2 {
-  width: 14.894%;
+  width: 14%;
 }
 .row-fluid > .span3 {
-  width: 23.404%;
+  width: 22%;
 }
 .row-fluid > .span4 {
-  width: 31.915%;
+  width: 30%;
 }
 .row-fluid > .span5 {
-  width: 40.426%;
+  width: 38%;
 }
 .row-fluid > .span6 {
-  width: 48.936%;
+  width: 46%;
 }
 .row-fluid > .span7 {
-  width: 57.447%;
+  width: 54%;
 }
 .row-fluid > .span8 {
-  width: 65.957%;
+  width: 62%;
 }
 .row-fluid > .span9 {
-  width: 74.468%;
+  width: 70%;
 }
 .row-fluid > .span10 {
-  width: 82.979%;
+  width: 78%;
 }
 .row-fluid > .span11 {
-  width: 91.489%;
+  width: 86%;
 }
 .row-fluid > .span12 {
-  width: 100.0%;
+  width: 94%;
 }
 
 .container {
@@ -354,7 +354,7 @@ p small {
   margin-bottom: 18px;
   font-size: 20px;
   font-weight: 200;
-  line-height: 27px;
+  line-height: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -386,7 +386,7 @@ h2 small {
 }
 
 h3 {
-  line-height: 27px;
+  line-height: 18px;
   font-size: 18px;
 }
 h3 small {
@@ -515,7 +515,7 @@ blockquote p {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 22.5px;
+  line-height: 18px;
 }
 blockquote small {
   display: block;
@@ -576,11 +576,11 @@ pre {
   display: block;
   padding: 8.5px;
   margin: 0 0 9px;
-  font-size: 12.025px;
+  font-size: 0px;
   line-height: 18px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -618,15 +618,15 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 27px;
-  font-size: 19.5px;
+  margin-bottom: 18px;
+  font-size: 13px;
   line-height: 36px;
   color: #333333;
   border: 0;
   border-bottom: 1px solid #eee;
 }
 legend small {
-  font-size: 13.5px;
+  font-size: 0px;
   color: #999999;
 }
 
@@ -767,9 +767,9 @@ input[type="hidden"] {
 }
 
 input, textarea {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
   -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -778,10 +778,10 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  border-color: rgba(82, 168, 236, 0);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(82, 168, 236, 0);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(82, 168, 236, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(82, 168, 236, 0);
   outline: 0;
   outline: thin dotted \9;
   /* IE6-9 */
@@ -971,9 +971,9 @@ input:focus:required:invalid:focus, textarea:focus:required:invalid:focus, selec
   display: block;
   background-color: white;
   border-color: #eee;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
   cursor: not-allowed;
 }
 
@@ -1325,8 +1325,8 @@ table .span12 {
     */
 @font-face {
   font-family: "FontAwesome";
-  src: url('fonts/fontawesome-webfont.eot');
-  src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.otf') format('opentype'), url('fonts/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+  src: url('/stylesheets/fonts/fontawesome-webfont.eot');
+  src: url('/stylesheets/fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('/stylesheets/fonts/fontawesome-webfont.woff') format('woff'), url('/stylesheets/fonts/fontawesome-webfont.ttf') format('truetype'), url('/stylesheets/fonts/fontawesome-webfont.otf') format('opentype'), url('/stylesheets/fonts/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('/stylesheets/fonts/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1387,7 +1387,7 @@ li [class*=" icon-"] {
 li .icon-large[class^="icon-"],
 li .icon-large[class*=" icon-"] {
   /* 1.5 increased font size for icon-large * 1.25 width */
-  width: 1.875em;
+  width: 1em;
 }
 
 li[class^="icon-"],
@@ -2487,8 +2487,8 @@ li[class*=" icon-"].icon-large:before {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   border-top: 4px solid black;
-  opacity: 0.3;
-  filter: alpha(opacity=30);
+  opacity: 0;
+  filter: alpha(opacity=0);
   content: "";
 }
 
@@ -2515,15 +2515,15 @@ li[class*=" icon-"].icon-large:before {
   list-style: none;
   background-color: white;
   border-color: #ccc;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0);
   border-style: solid;
   border-width: 1px;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
@@ -2565,7 +2565,7 @@ li[class*=" icon-"].icon-large:before {
 .dropdown.open .dropdown-toggle {
   color: white;
   background: #ccc;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0);
 }
 .dropdown.open .dropdown-menu {
   display: block;
@@ -2600,17 +2600,17 @@ li[class*=" icon-"].icon-large:before {
   margin-bottom: 20px;
   background-color: #f5f5f5;
   border: 1px solid #eee;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);
 }
 .well blockquote {
   border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .well-large {
@@ -2660,14 +2660,14 @@ li[class*=" icon-"].icon-large:before {
   line-height: 18px;
   color: black;
   text-shadow: 0 1px 0 white;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .close:hover {
   color: black;
   text-decoration: none;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
+  opacity: 0;
+  filter: alpha(opacity=0);
   cursor: pointer;
 }
 
@@ -2682,7 +2682,7 @@ li[class*=" icon-"].icon-large:before {
   line-height: 18px;
   color: #333333;
   text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0);
   vertical-align: middle;
   background-color: #f5f5f5;
   background-image: -moz-linear-gradient(top, white, #e6e6e6);
@@ -2694,16 +2694,16 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
   border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: 1px solid #cccccc;
   border-bottom-color: #b3b3b3;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
   cursor: pointer;
   *margin-left: .3em;
 }
@@ -2737,9 +2737,9 @@ li[class*=" icon-"].icon-large:before {
 
 .btn.active, .btn:active {
   background-image: none;
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
   background-color: #e6e6e6;
   background-color: #d9d9d9 \9;
   outline: 0;
@@ -2749,8 +2749,8 @@ li[class*=" icon-"].icon-large:before {
   cursor: default;
   background-image: none;
   background-color: #e6e6e6;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
+  opacity: 0;
+  filter: alpha(opacity=0);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2786,12 +2786,12 @@ li[class*=" icon-"].icon-large:before {
 }
 
 .btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
   color: white;
 }
 
 .btn-primary.active, .btn-warning.active, .btn-danger.active, .btn-success.active, .btn-info.active, .btn-inverse.active {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0);
 }
 
 .btn-primary {
@@ -2805,7 +2805,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0055CC', GradientType=0);
   border-color: #0055cc #0055cc #003580;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
@@ -2826,7 +2826,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBB450', endColorstr='#FFF89406', GradientType=0);
   border-color: #f89406 #f89406 #ad6704;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
@@ -2847,7 +2847,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0);
   border-color: #bd362f #bd362f #802420;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
@@ -2868,7 +2868,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF62C462', endColorstr='#FF51A351', GradientType=0);
   border-color: #51a351 #51a351 #387038;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-success:hover, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
@@ -2889,7 +2889,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0);
   border-color: #2f96b4 #2f96b4 #1f6377;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
@@ -2910,7 +2910,7 @@ li[class*=" icon-"].icon-large:before {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF555555', endColorstr='#FF222222', GradientType=0);
   border-color: #222222 #222222 black;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
@@ -3030,9 +3030,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .btn-group .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
-  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0), inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0), inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0), inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 2px rgba(0, 0, 0, 0);
   *padding-top: 3px;
   *padding-bottom: 3px;
 }
@@ -3066,9 +3066,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 .btn-group.open .dropdown-toggle {
   background-image: none;
-  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0), 0 1px 2px rgba(0, 0, 0, 0);
 }
 
 .btn .caret {
@@ -3099,14 +3099,14 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .btn-primary .caret, .btn-warning .caret, .btn-danger .caret, .btn-info .caret, .btn-success .caret, .btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white;
-  opacity: 0.75;
-  filter: alpha(opacity=75);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 18px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   -webkit-border-radius: 4px;
@@ -3179,7 +3179,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   font-weight: bold;
   line-height: 18px;
   color: #999999;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
   text-transform: uppercase;
 }
 
@@ -3196,7 +3196,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 .nav-list > li > a, .nav-list .nav-header {
   margin-left: -15px;
   margin-right: -15px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
 }
 
 .nav-list > li > a {
@@ -3205,7 +3205,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .nav-list > .active > a, .nav-list > .active > a:hover {
   color: white;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
   background-color: #0088cc;
 }
 
@@ -3509,9 +3509,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), inset 0 -1px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0), inset 0 -1px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0), inset 0 -1px 0 rgba(0, 0, 0, 0);
 }
 
 .navbar .container {
@@ -3534,11 +3534,11 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF333333', endColorstr='#FF222222', GradientType=0);
   border-color: #222222 #222222 black;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) fadein(rgba(0, 0, 0, 0), 15%);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(255, 255, 255, 0);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(255, 255, 255, 0);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0), 0 1px 0 rgba(255, 255, 255, 0);
 }
 .btn-navbar:hover, .btn-navbar:active, .btn-navbar.active, .btn-navbar.disabled, .btn-navbar[disabled] {
   background-color: #222222;
@@ -3555,9 +3555,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
 }
 
 .btn-navbar .icon-bar + .icon-bar {
@@ -3639,9 +3639,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   color: white;
   background-color: #626262;
   border: 1px solid #151515;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0px rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0), 0 1px 0px rgba(255, 255, 255, 0);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0), 0 1px 0px rgba(255, 255, 255, 0);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0), 0 1px 0px rgba(255, 255, 255, 0);
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -3660,9 +3660,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 white;
   background-color: white;
   border: 0;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0);
   outline: 0;
 }
 
@@ -3717,7 +3717,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   line-height: 19px;
   color: #999999;
   text-decoration: none;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
 }
 
 .navbar .nav > li > a:hover {
@@ -3776,7 +3776,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar-fixed-bottom .dropdown-menu:before {
   border-top: 7px solid #ccc;
-  border-top-color: rgba(0, 0, 0, 0.2);
+  border-top-color: rgba(0, 0, 0, 0);
   border-bottom: 0;
   bottom: -7px;
   top: auto;
@@ -3870,9 +3870,9 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
 }
 
 .pagination li {
@@ -3999,8 +3999,8 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 }
 
 .modal-backdrop, .modal-backdrop.fade.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .modal {
@@ -4013,15 +4013,15 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   margin: -250px 0 0 -280px;
   background-color: white;
   border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0);
   *border: 1px solid #999;
   /* IE6-7 */
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
@@ -4096,8 +4096,8 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   filter: alpha(opacity=0);
 }
 .tooltip.in {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .tooltip.top {
   margin-top: -2px;
@@ -4225,13 +4225,13 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   width: 280px;
   overflow: hidden;
   background: black;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0);
 }
 
 .popover-title {
@@ -4284,16 +4284,16 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
 }
 
 a.thumbnail:hover {
   border-color: #0088cc;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
-  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0);
 }
 
 .thumbnail > img {
@@ -4309,13 +4309,13 @@ a.thumbnail:hover {
 
 .label {
   padding: 1px 4px 2px;
-  font-size: 10.998px;
+  font-size: 0px;
   font-weight: bold;
   line-height: 13px;
   color: white;
   vertical-align: middle;
   white-space: nowrap;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
   background-color: #999999;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -4369,7 +4369,7 @@ a.thumbnail:hover {
 
 .badge {
   padding: 1px 9px 2px;
-  font-size: 12.025px;
+  font-size: 0px;
   font-weight: bold;
   white-space: nowrap;
   color: white;
@@ -4478,9 +4478,9 @@ a.thumbnail:hover {
   background-image: linear-gradient(top, #f5f5f5, #f9f9f9);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFF9F9F9', GradientType=0);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -4492,7 +4492,7 @@ a.thumbnail:hover {
   color: white;
   font-size: 12px;
   text-align: center;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0);
   background-color: #0d90d1;
   background-image: -moz-linear-gradient(top, #149bdf, #0480be);
   background-image: -ms-linear-gradient(top, #149bdf, #0480be);
@@ -4502,9 +4502,9 @@ a.thumbnail:hover {
   background-image: linear-gradient(top, #149bdf, #0480be);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF149BDF', endColorstr='#FF0480BE', GradientType=0);
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -4518,12 +4518,12 @@ a.thumbnail:hover {
 
 .progress-striped .bar {
   background-color: #149bdf;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
   -webkit-background-size: 40px 40px;
   -moz-background-size: 40px 40px;
   -o-background-size: 40px 40px;
@@ -4550,12 +4550,12 @@ a.thumbnail:hover {
 
 .progress-danger.progress-striped .bar {
   background-color: #ee5f5b;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 .progress-success .bar {
@@ -4572,12 +4572,12 @@ a.thumbnail:hover {
 
 .progress-success.progress-striped .bar {
   background-color: #62c462;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 .progress-info .bar {
@@ -4594,12 +4594,12 @@ a.thumbnail:hover {
 
 .progress-info.progress-striped .bar {
   background-color: #5bc0de;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 .progress-warning .bar {
@@ -4616,12 +4616,12 @@ a.thumbnail:hover {
 
 .progress-warning.progress-striped .bar {
   background-color: #fbb450;
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
-  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0)), color-stop(0.75, rgba(255, 255, 255, 0)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0));
 }
 
 .accordion {
@@ -4719,8 +4719,8 @@ a.thumbnail:hover {
   -webkit-border-radius: 23px;
   -moz-border-radius: 23px;
   border-radius: 23px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 .carousel-control.right {
   left: auto;
@@ -4729,8 +4729,8 @@ a.thumbnail:hover {
 .carousel-control:hover {
   color: white;
   text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 .carousel-caption {
@@ -4740,7 +4740,7 @@ a.thumbnail:hover {
   bottom: 0;
   padding: 10px 15px 5px;
   background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0);
 }
 
 .carousel-caption h4, .carousel-caption p {
@@ -4765,7 +4765,7 @@ a.thumbnail:hover {
 .hero-unit p {
   font-size: 18px;
   font-weight: 200;
-  line-height: 27px;
+  line-height: 18px;
   color: inherit;
 }
 
