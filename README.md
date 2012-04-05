@@ -12,7 +12,6 @@
 2. Repeat with drupal-html.txt
 
 ## Todos
-- Make sure the style tests above look good; need to be more specific in the (bootstrap) css to override. Still easier than overriding HTML.
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
 - ???
@@ -24,9 +23,9 @@ Use Thomas McDonald's SASS port of Twitter Bootstrap
 1. Download [Bootstrap for Sass][1]
 2. Extract the archive and get the assets from the vendor/ directory
 3. Copy assets:
-  * Images from **images/** to **images/**
-  * Javascript libraries from **javascripts/** to **scripts/**
-  * **bootstrap/** directory from **stylesheets/** to **styles/partials/**
+  - Images from **images/** to **images/**
+  - Javascript libraries from **javascripts/** to **scripts/**
+  - **bootstrap/** directory from **stylesheets/** to **styles/partials/**
 
 
 

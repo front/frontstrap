@@ -1,16 +1,5 @@
 <?php
 
-function frontstrap_preprocess_html(&$vars) {
-  //var_dump($vars['attributes_array']);
-  $vars['attributes_array']['data-spy'] = 'scroll';
-  $vars['attributes_array']['data-target'] = '.subnav';
-  $vars['attributes_array']['data-offset'] = '50';
-}
-
-function frontstrap_preprocess_page(&$vars) {
-  // $vars['theme_hook_suggestions'][] = 'page__testing';
-}
-
 /**
  * Implements hook_css_alter().
  */
@@ -130,4 +119,3 @@ function frontstrap_item_list($variables) {
   $output .= '</div>';
   return $output;
 }
-
