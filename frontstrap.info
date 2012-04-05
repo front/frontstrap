@@ -21,7 +21,7 @@ base theme = sasson
 
 ; Unset System CSS
 ; TODO: Make this optional on the Theme Settings UI
-stylesheets[all][] = system.base.css
+; stylesheets[all][] = system.base.css
 stylesheets[all][] = system.menus.css
 stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
@@ -35,6 +35,7 @@ stylesheets[all][] = system.theme.css
 ; stylesheets[all][] = views.css
 ; stylesheets[all][] = ctools.css
 
+; stylesheets[all][] = boilerplate.css
 
 ; Use compiled CSS
 styles[styles/frontstrap.css][options][media] = all

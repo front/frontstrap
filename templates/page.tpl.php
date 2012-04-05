@@ -93,19 +93,25 @@
     </header><!-- /#header -->
   <?php endif; ?>
 
-  <?php if ($main_menu_links): ?>
-    <nav id="main-menu" role="navigation">
-      <?php print $main_menu_links; ?>
-    </nav><!-- /#navigation -->
-  <?php endif; ?>
-
-  <?php if ($secondary_menu_links): ?>
-    <nav id="secondary-menu" role="navigation">
+  <?php if ($main_menu_links || $secondary_menu_links): ?>
+    <div class="navbar">
       <div class="navbar-inner">
-        <?php print $secondary_menu_links ?>
+        <div class="container">
+          <?php if ($main_menu_links): ?>
+            <nav id="main-menu" role="navigation">
+              <?php print $main_menu_links; ?>
+            </nav><!-- /#navigation -->
+          <?php endif; ?>
+
+          <?php if ($secondary_menu_links): ?>
+            <nav id="secondary-menu" role="navigation">
+              <?php print $secondary_menu_links ?>
+            </nav> <!-- /#secondary-menu -->
+          <?php endif; ?>
+        </div>
       </div>
-    </nav> <!-- /#secondary-menu -->
-  <?php endif; ?>
+    </div>
+  <?php endif ?>
 
   <?php if ($page['featured']): ?>
     <div id="featured">

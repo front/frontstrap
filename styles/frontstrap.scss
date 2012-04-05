@@ -83,6 +83,7 @@
 // Utility classes
 @import 'partials/bootstrap/utilities'; // Has to be last to override when necessary
 
+@import 'partials/_theme_bootstrap'; // Override, map classes and extend boottrap for our theme
 
 /*         General Sitewide Styles
  *************************************************/
