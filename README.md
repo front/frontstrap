@@ -12,6 +12,10 @@
 2. Repeat with drupal-html.txt
 
 ## Todos
+- Update messages style http://cl.ly/092f0j3d1Z3p180J2h3u
+- Update buttons for node edit: http://cl.ly/2b2l1l0a0i1Y3t0F253a (delete = red)
+- Add margin bottom to images in nodes + views: http://cl.ly/1c373N1Y2L1Z280j2C0H
+- Bootstrap buttons cleanup: http://cl.ly/1x2T0u0U2R1T323A080W
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
 - ???
