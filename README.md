@@ -18,6 +18,7 @@
 - Bootstrap buttons cleanup: http://cl.ly/1x2T0u0U2R1T323A080W
 - Change classes for paging, so it looks like this: http://cl.ly/3l241g3h021x0O290X3U
 - Remove instructions on filters: http://cl.ly/0H3W26401T3A1c3y2j0k
+- Replace ugly Drupal throbber with nice one: http://cl.ly/3M030i322b253v340K1K
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
 - ???
