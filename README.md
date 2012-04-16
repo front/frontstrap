@@ -17,6 +17,7 @@
 - Add margin bottom to images in nodes + views: http://cl.ly/1c373N1Y2L1Z280j2C0H
 - Bootstrap buttons cleanup: http://cl.ly/1x2T0u0U2R1T323A080W
 - Change classes for paging, so it looks like this: http://cl.ly/3l241g3h021x0O290X3U
+- Remove instructions on filters: http://cl.ly/0H3W26401T3A1c3y2j0k
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
 - ???
