@@ -38,7 +38,7 @@ stylesheets[all][] = system.theme.css
 ; stylesheets[all][] = boilerplate.css
 
 ; Use compiled CSS
-styles[styles/frontstrap.css][options][media] = all
+styles[styles/style.css][options][media] = all
 
 
 ; Theme Script Files ------------------------------------------------------

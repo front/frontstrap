@@ -21,6 +21,7 @@
 - Replace ugly Drupal throbber with nice one: http://cl.ly/3M030i322b253v340K1K
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
+- Drush command for cloning to new subtheme
 - ???
 
 ## How to update bootstrap libraries
