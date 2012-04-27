@@ -5,6 +5,13 @@
 1. $ drush dl sasson
 2. Check out your theme settings page for layout and grid settings, development settings, SASS settings and more. Much more info in Sasson's README.txt
 3. Here is a cute kitten: http://goo.gl/SVyem
+4. Download a copy of Frontstrap from https://github.com/front/frontstrap/downloads
+5. Rename some stuff:
+  - Rename the frontstrap directory to MYTHEME
+  - Rename frontstrap.info to MYTHEME.info
+  - Open MYTHEME.info and change "name = Frontstrap" to "name = MYTHEME"
+  - Open template.php and change all references to "frontstrap" to "MYTHEME"
+6.  Enable your theme (or clear your cache if the theme is already enabled)
 
 
 ## Style test
@@ -21,7 +28,7 @@
 - Replace ugly Drupal throbber with nice one: http://cl.ly/3M030i322b253v340K1K
 - Implement jQuery UI bootstrap theme http://addyosmani.github.com/jquery-ui-bootstrap/ Scrap the non-jQuery bootstrap js.
 - Make nice login
-- Drush command for cloning to new subtheme
+- Drush command for cloning to new subtheme?
 - ???
 
 ## How to update bootstrap libraries
